@@ -1,0 +1,12 @@
+xset r rate 250 30
+xsetroot -cursor_name left_ptr&
+
+MON=$(xrandr -q | grep -o "HDMI2 connected")
+if [ "$MON" = "HDMI2 connected" ]; then
+    ~/.screenlayout/2m.sh
+fi
+
+nitrogen --restore
+~/bin/panel.sh | ~/bin/lemonbar -fMonospace:size=10 -fFontAwesome:size=12 -B#FF455b63 -F#FFEEEEEE -g1600x25 eDP1 | zsh &
+sxhkd &
+rofi -key-run F2 -fuzzy &
