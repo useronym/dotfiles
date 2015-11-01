@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 PAD="  "
-BAT_BIAS=2 # My battery often decides to stop charging at what is reported as 98%
+BAT_BIAS=3 # My battery often decides to stop charging at what is reported as 97-99%
 IW="wlp2s0"
 
 Clock() {
