@@ -45,11 +45,19 @@ Backlight() {
 
 Weather() {
     URL='http://www.accuweather.com/en/cz/brno/123291/weather-forecast/123291'
-    WEATHER=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print  $14", "$12"°" }'| head -1)
+    WEATHER=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $2 " "  $14", "$12"°" }'| head -1)
+    NIGHT=$(echo $WEATHER | cut -d " " -f1)
+    WEATHER=$(echo $WEATHER | cut -d " " -f1 --complement)
     case $WEATHER in
         Foggy*) echo -ne '%{T2}\uf070%{T1}';;
-        Sunny* | Clear*) echo -ne '%{T2}\uf185%{T1}';;
-        *) echo -ne '%{T2}\uf0e7%{T1}';;
+        Stormy*) echo -ne '%{T2}\uf0e7%{T1}';;
+        Rainy*) echo -ne '%{T2}\uf043%{T1}';;
+        Sunny* | Clear*)
+            if [ "$NIGHT" == "night" ]; then
+                echo -ne '%{T2}\uf186%{T1}'
+            else
+                echo -ne '%{T2}\uf185%{T1}'
+            fi;;
     esac
     echo -n " $WEATHER"
 }
