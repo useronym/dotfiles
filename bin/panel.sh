@@ -5,7 +5,7 @@ BAT_BIAS=2 # My battery often decides to stop charging at what is reported as 98
 IW="wlp2s0"
 
 Clock() {
-    DATE=$(date "+%a %b %d, %H:%M")
+    DATE=$(date "+%a %b %d  %H:%M")
     echo -n "$DATE"
 }
 
@@ -58,7 +58,7 @@ Mail() {
     MAIL=$(mailcheck -c)
     if [ "$MAIL" != "" ]; then
         MAILS=$(echo $MAIL | cut -d " " -f 3)
-        echo -ne "%{T2}\uf0e0%{T1} $MAILS new messages"
+        echo -ne "%{T2}\uf0e0%{T1} $MAILS new"
     fi
 }
 

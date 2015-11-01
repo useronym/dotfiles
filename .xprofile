@@ -6,7 +6,7 @@ if [ "$MON" = "HDMI2 connected" ]; then
     ~/.screenlayout/2m.sh
 fi
 
-compton &
+compton -b
 nitrogen --restore
 ~/bin/panel.sh | ~/bin/lemonbar -fMonospace:size=10 -fFontAwesome:size=12 -B#00455b63 -F#FF000000 -g1600x25 eDP1 | zsh &
 sxhkd &
