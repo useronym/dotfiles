@@ -87,7 +87,7 @@ super + space
     j4-dmenu-desktop --term=termite
 
 super + Escape
-    xflock4
+    sleep 1; xset dpms force off; slock
 
 XF86AudioMute
     amixer sset Master toggle

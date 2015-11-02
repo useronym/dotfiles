@@ -1,5 +1,6 @@
 [options]
-font = Inconsolata Medium 12
+font = Inconsolata-g 11
+geometry=1000x500
 mouse_autohide = true
 scrollback_lines = 5000
 
