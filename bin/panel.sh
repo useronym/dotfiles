@@ -77,7 +77,7 @@ while true; do
     if [ $((c % 15)) -eq 0 ]; then wifi="$(Wifi)"; fi
     if [ $((c % 60)) -eq 0 ]; then battery="$(Battery)"; fi
     if [ $((c % 60)) -eq 0 ]; then mail="$(Mail)"; fi
-    if [ $((c % 900)) -eq 0 ]; then weather="$(Weather)"; fi
+    if [ $((c % 900)) -eq 10 ]; then weather="$(Weather)"; fi
     echo -n "%{l}"$PAD" $clock "$PAD" $weather %{r}$mail "$PAD" $(Sound) "$PAD" $wifi "$PAD" $battery "$PAD""
     echo -e "%{A2:poweroff:}%{A3:reboot:} "$PAD" %{T2}\uf011%{T1} "$PAD" %{A}%{A}"
     c=$((c+1));

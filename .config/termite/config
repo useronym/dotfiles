@@ -1,5 +1,5 @@
 [options]
-font = Bitstream Vera Sans Mono 11
+font = Inconsolata Medium 12
 mouse_autohide = true
 scrollback_lines = 5000
 
