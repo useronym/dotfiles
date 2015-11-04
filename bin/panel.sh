@@ -48,11 +48,12 @@ Weather() {
     WEATHER=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $2 " "  $14", "$12"°" }'| head -1)
     NIGHT=$(echo $WEATHER | cut -d " " -f1)
     WEATHER=$(echo $WEATHER | cut -d " " -f1 --complement)
+    shopt -s nocasematch
     case $WEATHER in
-        Foggy*) echo -ne '%{T2}\uf070%{T1}';;
-        Stormy*) echo -ne '%{T2}\uf0e7%{T1}';;
-        Rainy*) echo -ne '%{T2}\uf043%{T1}';;
-        Sunny* | Clear*)
+        *fog*) echo -ne '%{T2}\uf070%{T1}';;
+        *storm*) echo -ne '%{T2}\uf0e7%{T1}';;
+        *rain*) echo -ne '%{T2}\uf043%{T1}';;
+        *)
             if [ "$NIGHT" == "night" ]; then
                 echo -ne '%{T2}\uf186%{T1}'
             else
