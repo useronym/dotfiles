@@ -19,7 +19,7 @@ Battery() {
         1* | 2* | 3*)   echo -ne '%{T2}\uf243%{T1}';;
         *)              echo -ne '%{T2}\uf244%{T1}';;
     esac
-    echo -n $BAT%
+    echo -n " $BAT %"
 }
 
 Wifi() {
