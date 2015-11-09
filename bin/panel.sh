@@ -53,7 +53,8 @@ Weather() {
         *fog*) echo -ne '%{T2}\uf070%{T1}';;
         *storm*) echo -ne '%{T2}\uf0e7%{T1}';;
         *rain*) echo -ne '%{T2}\uf043%{T1}';;
-        *)
+        *cloud*) echo -ne '%{T2}\uf0c2%{T1}';;
+        *sun* | *clear*)
             if [ "$NIGHT" == "night" ]; then
                 echo -ne '%{T2}\uf186%{T1}'
             else
