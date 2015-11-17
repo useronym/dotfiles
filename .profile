@@ -3,9 +3,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export BROWSER='chromium'
 export EDITOR='vim'
 
-export TERM='xterm-256color'
-export BROWSER='chromium'
-
 eval "$(thefuck --alias)"
 
 alias e='env TERM=xterm-256color emacs -nw'

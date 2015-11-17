@@ -25,7 +25,7 @@ Battery() {
 Wifi() {
     WIFI_SSID=$(iw $IW link | grep 'SSID' | sed 's/SSID: //' | sed 's/\t//')
     #WIFI_SIGNAL=$(iw $IW link | grep 'signal' | sed 's/signal: //' | sed 's/ dBm//' | sed 's/\t//')
-    echo -ne '%{A:nm-connection-editor:}%{T2}\uf1eb%{T1}' $WIFI_SSID '%{A}'
+    echo -ne '%{A:cmst -d:}%{T2}\uf1eb%{T1}' $WIFI_SSID '%{A}'
 }
 
 Sound() {
