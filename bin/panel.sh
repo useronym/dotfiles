@@ -5,8 +5,8 @@ BAT_BIAS=3 # My battery often decides to stop charging at what is reported as 97
 IW="wlp2s0"
 
 Clock() {
-    DATE=$(date "+%a %b %d  %H:%M")
-    echo -n "$DATE"
+    DATE=$(date "+%{T2}\uf017%{T1}  %a %b %d  %H:%M")
+    echo -ne "$DATE"
 }
 
 Battery() {
@@ -25,7 +25,7 @@ Battery() {
 Wifi() {
     WIFI_SSID=$(iw $IW link | grep 'SSID' | sed 's/SSID: //' | sed 's/\t//')
     #WIFI_SIGNAL=$(iw $IW link | grep 'signal' | sed 's/signal: //' | sed 's/ dBm//' | sed 's/\t//')
-    echo -ne '%{A:cmst -d:}%{T2}\uf1eb%{T1}' $WIFI_SSID '%{A}'
+    echo -ne '%{A:termite -e nmtui:}%{T2}\uf1eb%{T1}' $WIFI_SSID '%{A}'
 }
 
 Sound() {
@@ -54,6 +54,7 @@ Weather() {
         *storm*) echo -ne '%{T2}\uf0e7%{T1}';;
         *rain*) echo -ne '%{T2}\uf043%{T1}';;
         *cloud*) echo -ne '%{T2}\uf0c2%{T1}';;
+        *snow*) echo -ne '%{T2}\uf069%{T1}';;
         *sun* | *clear*)
             if [ "$NIGHT" == "night" ]; then
                 echo -ne '%{T2}\uf186%{T1}'
