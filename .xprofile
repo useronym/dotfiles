@@ -7,5 +7,6 @@ if [ "$MON" = "HDMI2 connected" ]; then
 fi
 
 compton -b
+desktop.sh
 sxhkd &
 rofi -key-run F2 -fuzzy &
