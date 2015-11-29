@@ -39,5 +39,5 @@ PANEL_BG=(
 rnd=$(( $(date +%s) % ${#WALLPS[@]} ))
 
 killall -q panel.sh
-feh --bg-fill "~/.wallpapers/${WALLPS[rnd]}" --bg-fill "~/.wallpapers/$SND_MON"
-panel.sh | lemonbar -fMonospace:size=10 -fFontAwesome:size=12 -F$PANEL_FG[rnd] -B$PANEL_BG[rnd] -g1600x25 eDP1 | zsh &
+feh --bg-fill "$HOME/.wallpapers/${WALLPS[rnd]}" --bg-fill "$HOME/.wallpapers/$SND_MON"
+panel.sh | lemonbar -fMonospace:size=10 -fFontAwesome:size=12 -F${PANEL_FG[rnd]} -B${PANEL_BG[rnd]} -g1600x25 eDP1 | zsh &
