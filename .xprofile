@@ -1,6 +1,6 @@
-export PATH=$HOME/.gem/ruby/2.2.0/bin:$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH
-export TERM='xterm-256color'
+export PATH="$HOME/.gem/ruby/2.2.0/bin:$HOME/bin:/usr/local/bin:$HOME/.cabal/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
+export BROWSER='chromium'
 
 xset r rate 250 30
 xsetroot -cursor_name left_ptr&
@@ -14,5 +14,3 @@ compton -b
 desktop.sh &
 sxhkd &
 rofi -key-run F2 -fuzzy &
-
-export BROWSER='chromium'
