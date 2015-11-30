@@ -4,7 +4,7 @@ calc() { awk "BEGIN{printf \"%2.0f\", $*}"; }
 
 
 WALLPS=(~/.wallpapers/*)
-SND_MON="$HOME/.wallpapers/ws_Minimal_Gray_to_White_Gradient_1920x1080.jpg"
+SND_MON="$HOME/Pictures/gray-gradient-9839.jpg"
 
 rnd=$(( $(date +%s) % ${#WALLPS[@]} ))
 killall -q panel.sh
