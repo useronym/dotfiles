@@ -5,8 +5,8 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
-"set background=dark
-colorscheme gruvbox
+set background=dark
+colorscheme gruvbox 
 
 set tabstop=4
 set shiftwidth=4
