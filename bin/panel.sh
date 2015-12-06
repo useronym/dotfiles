@@ -50,7 +50,7 @@ Weather() {
     WEATHER=$(echo $WEATHER | cut -d " " -f1 --complement)
     shopt -s nocasematch
     case $WEATHER in
-        *fog*) echo -ne '%{T2}\uf070%{T1}';;
+        *fog* | *mist*) echo -ne '%{T2}\uf070%{T1}';;
         *storm*) echo -ne '%{T2}\uf0e7%{T1}';;
         *rain*) echo -ne '%{T2}\uf043%{T1}';;
         *cloud*) echo -ne '%{T2}\uf0c2%{T1}';;
