@@ -13,10 +13,10 @@ Battery() {
     BAT=$(cat /sys/class/power_supply/BAT0/capacity)
     BAT=$(((BAT + BAT_BIAS) >= 100 ? 100 : BAT))
     case $BAT in
-        7* | 9* | 100)  echo -ne '%{T2}\uf240%{T1}';;
-        5* | 6*)        echo -ne '%{T2}\uf241%{T1}';;
-        3* | 4*)        echo -ne '%{T2}\uf242%{T1}';;
-        1* | 2*)        echo -ne '%{T2}\uf243%{T1}';;
+        8* | 9* | 100)  echo -ne '%{T2}\uf240%{T1}';;
+        6* | 7*)        echo -ne '%{T2}\uf241%{T1}';;
+        4* | 5*)        echo -ne '%{T2}\uf242%{T1}';;
+        1* | 2* | 3*)    echo -ne '%{T2}\uf243%{T1}';;
         *)              echo -ne '%{T2}%{F#FFFF0000}\uf244%{F-}%{T1}';;
     esac
     echo -n " $BAT %"
