@@ -1,0 +1,34 @@
+set mbox_type=Maildir
+set folder=$HOME/Documents/mail/INBOX
+set spoolfile=+/
+set header_cache=~/.cache/mutt
+
+set realname='Adam Krupicka'
+set from="Adam Krupicka <akka@mail.muni.cz>"
+set sendmail="/usr/bin/msmtp"
+set edit_headers=yes
+set folder=~/Documents/mail
+set mbox=+mbox
+set spoolfile=+INBOX
+set record=+Sent
+set postponed=+Drafts
+set mbox_type=Maildir
+mailboxes +inbox +sent
+
+set wait_key = no        # shut up, mutt
+set timeout = 3          # idle time before scanning
+set delete               # don't ask, just do
+unset confirmappend      # don't ask, just do!
+set quit                 # don't ask, just do!!
+unset mark_old           # read/new is good enough for me
+set pipe_decode          # strip headers and eval mimes when piping
+set thorough_search      # strip headers and eval mimes before searching
+
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# Header Options -------------------------------------
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *                           # some distros order things by default
+hdr_order from: to: cc: date: subject:  # and in this order

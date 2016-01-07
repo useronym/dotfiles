@@ -11,6 +11,7 @@ colorscheme gruvbox
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set number
 
 set wildmode=longest,list,full
 set wildmenu

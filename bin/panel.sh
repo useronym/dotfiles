@@ -16,7 +16,7 @@ Battery() {
         8* | 9* | 100)  echo -ne '%{T2}\uf240%{T1}';;
         6* | 7*)        echo -ne '%{T2}\uf241%{T1}';;
         4* | 5*)        echo -ne '%{T2}\uf242%{T1}';;
-        1* | 2* | 3*)    echo -ne '%{T2}\uf243%{T1}';;
+        1* | 2* | 3*)   echo -ne '%{T2}\uf243%{T1}';;
         *)              echo -ne '%{T2}%{F#FFFF0000}\uf244%{F-}%{T1}';;
     esac
     echo -n " $BAT %"
@@ -44,8 +44,7 @@ Backlight() {
 }
 
 Weather() {
-    #URL='http://www.accuweather.com/en/cz/brno/123291/weather-forecast/123291'
-    URL='http://www.accuweather.com/en/sk/stary-smokovec/300241/weather-forecast/300241'
+    URL='http://www.accuweather.com/en/cz/brno/123291/weather-forecast/123291'
     WEATHER=$(wget -q -O- "$URL" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $2 " "  $14", "$12"°" }'| head -1)
     NIGHT=$(echo $WEATHER | cut -d " " -f1)
     WEATHER=$(echo $WEATHER | cut -d " " -f1 --complement)
@@ -70,7 +69,7 @@ Mail() {
     MAIL=$(mailcheck -c)
     if [ "$MAIL" != "" ]; then
         MAILS=$(echo $MAIL | cut -d " " -f 3)
-        echo -ne "%{A:termite -e sup:}%{T2}\uf0e0%{T1} $MAILS new%{A}"
+        echo -ne "%{A:termite -e mutt:}%{T2}\uf0e0%{T1} $MAILS new%{A}"
     fi
 }
 
