@@ -18,5 +18,6 @@ else
 fi
 
 
+$XDG_CONFIG_HOME/bspwm/bspwmrc
 feh --bg-fill ${WALLPS[rnd]} --bg-fill $SND_MON
 panel.sh | lemonbar -fMonospace:size=10 -fFontAwesome:size=12 -F$panel_fg -B"#00000000" -g1600x25 eDP1 | zsh &
