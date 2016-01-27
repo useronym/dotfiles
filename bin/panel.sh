@@ -19,6 +19,10 @@ Battery() {
         1* | 2* | 3*)   echo -ne '%{T2}\uf243%{T1}';;
         *)              echo -ne '%{T2}%{F#FFFF0000}\uf244%{F-}%{T1}';;
     esac
+    STATUS=$(cat /sys/class/power_supply/BAT0/status)
+    if [ "$STATUS" = "Charging" ]; then
+        echo -ne ' %{T2}%{F#FF2C75FF}\uf0e7%{F-}%{T1}'
+    fi
     echo -n " $BAT %"
 }
 
