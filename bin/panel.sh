@@ -29,7 +29,7 @@ Battery() {
 Wifi() {
     WIFI_SSID=$(iw $IW link | grep 'SSID' | sed 's/SSID: //' | sed 's/\t//')
     #WIFI_SIGNAL=$(iw $IW link | grep 'signal' | sed 's/signal: //' | sed 's/ dBm//' | sed 's/\t//')
-    echo -ne '%{A:termite -e nmtui:}%{T2}\uf1eb%{T1}' $WIFI_SSID '%{A}'
+    echo -ne '%{A:termite -e nmtui:}%{T2}\uf1eb%{T1}' $WIFI_SSID'%{A}'
 }
 
 Sound() {
@@ -85,7 +85,7 @@ while true; do
     if [ $((c % 60)) -eq 0 ]; then battery="$(Battery)"; fi
     if [ $((c % 60)) -eq 0 ]; then mail="$(Mail)"; fi
     if [ $((c % 900)) -eq 10 ]; then weather="$(Weather)"; fi
-    echo -n "%{l}"$PAD" $clock "$PAD" $weather %{r}$mail "$PAD" $(Sound) "$PAD" $wifi "$PAD" $battery "$PAD""
+    echo -n "%{l}"$PAD" $clock "$PAD" $weather %{r}$mail "$PAD" $wifi "$PAD" $(Sound) "$PAD" $battery "$PAD""
     echo -e "%{A2:poweroff:}%{A3:reboot:} "$PAD" %{T2}\uf011%{T1} "$PAD" %{A}%{A}"
     c=$((c+1));
     sleep 1;
