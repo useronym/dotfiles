@@ -17,7 +17,5 @@ bspc monitor eDP1 -d I II III IV V
 bspc monitor HDMI2 -d VI VII VIII IX X
 
 #bspc rule -a Gimp desktop=^8 follow=on floating=on
-# bspc rule -a Chromium desktop=^2
-bspc rule -a termite floating=on
-bspc rule -a Kupfer.py focus=on
+bspc rule -a termite state=floating
 bspc rule -a Screenkey manage=off
