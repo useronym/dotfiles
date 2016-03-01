@@ -3,15 +3,15 @@
 calc() { awk "BEGIN{printf \"%2.0f\", $*}"; }
 
 
-WALLPS=(~/.wallpapers/*)
-SND_MON="$HOME/Pictures/gray-gradient-9839.jpg"
+WALLPS=(~/Pictures/*)
+SND_MON="$HOME/Pictures/Dark-Black-Background.jpg"
 
 rnd=$(( $(date +%s) % ${#WALLPS[@]} ))
 killall -q panel.sh
 
 data=$(convert ${WALLPS[rnd]} -crop x50 -colorspace gray -verbose info:)
 mean=$(echo "$data" | sed -n '/^.*[Mm]ean:.*[(]\([0-9.]*\).*$/{ s//\1/; p; q; }')
-if [ $(calc "$mean * 100") -ge 50 ]; then
+if [ $(calc "$mean * 100") -ge 66 ]; then
     panel_fg="#FF000000"
 else
     panel_fg="#FFFFFFFF"
