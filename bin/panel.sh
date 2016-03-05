@@ -5,7 +5,7 @@ BAT_BIAS=3 # My battery often decides to stop charging at what is reported as 97
 IW="wlp2s0"
 
 Clock() {
-    DATE=$(date "+%{T2}\uf017%{T1}  %a %b %d  %H:%M")
+    DATE=$(date "+%{T2}\uf017%{T1}  %a %B %-d  %H:%M")
     echo -ne "$DATE"
 }
 
