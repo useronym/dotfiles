@@ -4,7 +4,7 @@ set spoolfile=+/
 set header_cache=~/.cache/mutt
 
 set realname='Adam Krupicka'
-set from="Adam Krupicka <akka@mail.muni.cz>"
+set from="Adam Krupicka <akr@mail.muni.cz>"
 set sendmail="/usr/bin/msmtp"
 set edit_headers=yes
 set folder=~/Documents/mail
