@@ -59,6 +59,9 @@ imap <buffer> \_= ₌
 imap <buffer> \_( ₍
 ""imap <buffer> \_) ₎
 
+imap <buffer> -- –
+imap <buffer> --- —
+
 " Arrows
 imap <buffer> -> →
 imap <buffer> <-- ←
