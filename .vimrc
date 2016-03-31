@@ -24,23 +24,25 @@ nnoremap <leader>K :<C-u>Unite ref/erlang -vertical -default-action=split<CR>
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
+autocmd BufRead,BufNewFile *.txt setlocal spell wrap linebreak nolist
+
 " Superscripts
-imap <buffer> ^0 ⁰
-imap <buffer> ^1 ¹
-imap <buffer> ^2 ²
-imap <buffer> ^3 ³
-imap <buffer> ^4 ⁴
-imap <buffer> ^5 ⁵
-imap <buffer> ^6 ⁶
-imap <buffer> ^7 ⁷
-imap <buffer> ^8 ⁸
-imap <buffer> ^9 ⁹
-imap <buffer> ^+ ⁺
-imap <buffer> ^- ⁻
-imap <buffer> ^= ⁼
-imap <buffer> ^( ⁽
-imap <buffer> ^) ⁾
-imap <buffer> ^n ⁿ
+imap <buffer> \^0 ⁰
+imap <buffer> \^1 ¹
+imap <buffer> \^2 ²
+imap <buffer> \^3 ³
+imap <buffer> \^4 ⁴
+imap <buffer> \^5 ⁵
+imap <buffer> \^6 ⁶
+imap <buffer> \^7 ⁷
+imap <buffer> \^8 ⁸
+imap <buffer> \^9 ⁹
+imap <buffer> \^+ ⁺
+imap <buffer> \^- ⁻
+imap <buffer> \^= ⁼
+imap <buffer> \^( ⁽
+imap <buffer> \^) ⁾
+imap <buffer> \^n ⁿ
 
 " Subscripts
 imap <buffer> \_0 ₀
@@ -57,18 +59,18 @@ imap <buffer> \_+ ₊
 imap <buffer> \_- ₋
 imap <buffer> \_= ₌
 imap <buffer> \_( ₍
-""imap <buffer> \_) ₎
+imap <buffer> \_) ₎
 
 imap <buffer> -- –
 imap <buffer> --- —
 
 " Arrows
 imap <buffer> -> →
-imap <buffer> <-- ←
-imap <buffer> <--> ↔
-imap <buffer> ==> ⇒
-imap <buffer> <== ⇐
-imap <buffer> <==> ⇔
+imap <buffer> <- ←
+imap <buffer> <-> ↔
+imap <buffer> => ⇒
+imap <buffer> <= ⇐
+imap <buffer> <=> ⇔
 "
 " Symbols from mathematics and logic, LaTeX style
 imap <buffer> \forall ∀
