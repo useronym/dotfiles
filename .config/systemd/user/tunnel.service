@@ -6,3 +6,6 @@ Type=simple
 Restart=always
 RestartSec=10
 ExecStart=/usr/bin/autossh -F %h/.ssh/config -M 0 -NL 31415:localhost:31415 -o TCPKeepAlive=yes aisa
+
+[Install]
+WantedBy=default.target
