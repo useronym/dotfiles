@@ -49,13 +49,13 @@
 # Mathy stuffs
 <backslash> <f> <o> <r> <a> <l> <l> : "∀"  # latex \forall
 <backslash> <e> <x> <i> <s> <t> <s> : "∃"  # latex \exists
-<backslash> <i> <n> : "∈"  # latex \in
+<backslash> <i> <n> <space> : "∈ "  # latex \in
 <backslash> <n> <i> : "∋"  # latex \ni
 <backslash> <e> <m> <p> <t> <y> : "∅"  # latex \empty
 <backslash> <p> <r> <o> <d> : "∏"  # latex \prod
 <backslash> <s> <u> <m> : "∑"  # latex \sum
 <backslash> <l> <e> : "≤"  # latex \le
-<backslash> <g> <e> : "≥"  # latex \ge
+<backslash> <g> <e> <space> : "≥ "  # latex \ge
 <backslash> <p> <m> : "±"  # latex \pm
 <backslash> <s> <u> <b> <s> <e> <t> : "⊂"  # latex \subset
 <backslash> <s> <u> <b> <s> <e> <q> : "⊆"  # latex \subseteq
@@ -64,7 +64,6 @@
 <backslash> <s> <e> <t> <m> <i> <n> <u> <s> : "∖"  # latex \setminus
 <backslash> <c> <a> <p> : "∩"  # latex \cap
 <backslash> <c> <u> <p> : "∪"  # latex \cup
-<backslash> <i> <n> <t> : "∫"  # latex \int
 <backslash> <t> <h> <e> <r> <e> <f> <o> <r> <e> : "∴"  # latex \therefore
 <backslash> <q> <e> <d> : "∎"  # latex \qed
 <backslash> <N> : "ℕ"  # latex \N
@@ -83,11 +82,13 @@
 <backslash> <v> <e> <e> : "∨"  # latex \vee
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
 <backslash> <n> <o> <t> : "¬"  # latex \not
-<backslash> <c> <d> <o> <t> <s> : "⋯"  # latex \cdots
 <backslash> <c> <d> <o> <t> : "⋅"  # latex \cdot
 <backslash> <c> <i> <r> <c> : "∘"  # latex \circ
 <backslash> <t> <i> <m> <e> <s> : "×"  # latex \times
-<backslash> <o> <p> <l> <u> <s> : "⊕"  # latex \oplus
+# <backslash> <o> <p> <l> <u> <s> : "⊕"  # latex \oplus
+# <backslash> <c> <i> <r> <c> <l> <e> <d> <a> <s> <t> : "⊛"  # latex \circledast
+<backslash> <O> <plus> : "⊕"  # latex \circledast
+<backslash> <O> <asterisk> : "⊛"  # latex \circledast
 <backslash> <l> <a> <n> <g> <l> <e> : "⟨"  # latex \langle
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
 
