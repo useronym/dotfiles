@@ -2,6 +2,11 @@ export PATH="$HOME/.gem/ruby/2.2.0/bin:$HOME/bin:/usr/local/bin:$HOME/.cabal/bin
 export XDG_CONFIG_HOME="$HOME/.config"
 export BROWSER='chromium'
 
+export GTK_IM_MODULE='uim'
+export QT_IM_MODULE='uim'
+uim-xim &
+export XMODIFIERS='@im=uim'
+
 xset r rate 250 30
 xsetroot -cursor_name left_ptr&
 

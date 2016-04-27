@@ -1,0 +1,144 @@
+<backslash> <backslash> : "\\" # inserts a single \
+
+# Supersripts and subscripts
+<backslash> <asciicircum> <0> : "⁰"
+<backslash> <asciicircum> <1> : "¹"
+<backslash> <asciicircum> <2> : "²"
+<backslash> <asciicircum> <3> : "³"
+<backslash> <asciicircum> <4> : "⁴"
+<backslash> <asciicircum> <5> : "⁵"
+<backslash> <asciicircum> <6> : "⁶"
+<backslash> <asciicircum> <7> : "⁷"
+<backslash> <asciicircum> <8> : "⁸"
+<backslash> <asciicircum> <9> : "⁹"
+<backslash> <asciicircum> <n> : "ⁿ"
+<backslash> <underscore> <0> : "₀"
+<backslash> <underscore> <1> : "₁"
+<backslash> <underscore> <2> : "₂"
+<backslash> <underscore> <3> : "₃"
+<backslash> <underscore> <4> : "₄"
+<backslash> <underscore> <5> : "₅"
+<backslash> <underscore> <6> : "₆"
+<backslash> <underscore> <7> : "₇"
+<backslash> <underscore> <8> : "₈"
+<backslash> <underscore> <9> : "₉"
+<backslash> <underscore> <k> : "ₖ"
+<backslash> <underscore> <l> : "ₗ"
+<backslash> <underscore> <m> : "ₘ"
+<backslash> <underscore> <n> : "ₙ"
+<backslash> <underscore> <plus> : "₊"
+<backslash> <underscore> <minus> : "₋"
+<backslash> <underscore> <equal> : "₌"
+<backslash> <underscore> <parenleft> : "₍"
+<backslash> <underscore> <parenright> : "₎"
+
+# Written prose fancy characters
+<backslash> <l> <d> <o> <t> <s> : "…"  # latex \ldots
+<backslash> <period> <period> : "…"  # latex \ldots
+<backslash> <minus> <minus> : "–" # en dash
+<backslash> <minus> <equal> : "—" # em dash
+
+# Arrows
+<backslash> <t> <o> : "→"  # latex \to
+<backslash> <m> <a> <p> <s> <t> <o> : "↦"  # latex \mapsto
+<backslash> <g> <e> <t> <s> : "←"  # latex \gets
+<backslash> <i> <m> <p> <l> : "⇒" # latex \Rightarrow
+<backslash> <i> <m> <p> <r> : "⇐" # latex \Leftarrow
+<backslash> <i> <m> <p> <b> : "⇔" # latex \Leftrightarrow
+
+# Mathy stuffs
+<backslash> <f> <o> <r> <a> <l> <l> : "∀"  # latex \forall
+<backslash> <e> <x> <i> <s> <t> <s> : "∃"  # latex \exists
+<backslash> <i> <n> : "∈"  # latex \in
+<backslash> <n> <i> : "∋"  # latex \ni
+<backslash> <e> <m> <p> <t> <y> : "∅"  # latex \empty
+<backslash> <p> <r> <o> <d> : "∏"  # latex \prod
+<backslash> <s> <u> <m> : "∑"  # latex \sum
+<backslash> <l> <e> : "≤"  # latex \le
+<backslash> <g> <e> : "≥"  # latex \ge
+<backslash> <p> <m> : "±"  # latex \pm
+<backslash> <s> <u> <b> <s> <e> <t> : "⊂"  # latex \subset
+<backslash> <s> <u> <b> <s> <e> <q> : "⊆"  # latex \subseteq
+<backslash> <s> <u> <p> <s> <e> <t> : "⊃"  # latex \supset
+<backslash> <s> <u> <p> <s> <e> <q> : "⊇"  # latex \supseteq
+<backslash> <s> <e> <t> <m> <i> <n> <u> <s> : "∖"  # latex \setminus
+<backslash> <c> <a> <p> : "∩"  # latex \cap
+<backslash> <c> <u> <p> : "∪"  # latex \cup
+<backslash> <i> <n> <t> : "∫"  # latex \int
+<backslash> <t> <h> <e> <r> <e> <f> <o> <r> <e> : "∴"  # latex \therefore
+<backslash> <q> <e> <d> : "∎"  # latex \qed
+<backslash> <N> : "ℕ"  # latex \N
+<backslash> <Z> : "ℤ"  # latex \Z
+<backslash> <C> : "ℂ"  # latex \C
+<backslash> <Q> : "ℚ"  # latex \Q
+<backslash> <R> : "ℝ"  # latex \R
+<backslash> <E> : "𝔼"  # latex \E
+<backslash> <F> : "𝔽"  # latex \F
+<backslash> <i> <n> <f> <t> <y> : "∞"  # latex \infty
+<backslash> <e> <q> <u> <i> <v> : "≡"  # latex \equiv
+<backslash> <c> <o> <n> <g> : "≅"  # latex \cong
+<backslash> <n> <e> : "≠"  # latex \ne
+<backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
+<backslash> <p> <e> <r> <p> : "⊥"  # latex \perp
+<backslash> <v> <e> <e> : "∨"  # latex \vee
+<backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
+<backslash> <n> <o> <t> : "¬"  # latex \not
+<backslash> <c> <d> <o> <t> <s> : "⋯"  # latex \cdots
+<backslash> <c> <d> <o> <t> : "⋅"  # latex \cdot
+<backslash> <c> <i> <r> <c> : "∘"  # latex \circ
+<backslash> <t> <i> <m> <e> <s> : "×"  # latex \times
+<backslash> <o> <p> <l> <u> <s> : "⊕"  # latex \oplus
+<backslash> <l> <a> <n> <g> <l> <e> : "⟨"  # latex \langle
+<backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
+
+# Greek alphabet
+<backslash> <a> <l> <p> <h> <a> : "α"  # latex \alpha
+<backslash> <b> <e> <t> <a> : "β"  # latex \beta
+<backslash> <g> <a> <m> <m> <a> : "γ"  # latex \gamma
+<backslash> <d> <e> <l> <t> <a> : "δ"  # latex \delta
+<backslash> <e> <p> <s> <i> <l> <o> <n> : "ε"  # latex \epsilon
+<backslash> <z> <e> <t> <a> : "ζ"  # latex \zeta
+<backslash> <n> <u> : "η"  # latex \nu
+<backslash> <t> <h> <e> <t> <a> : "θ"  # latex \theta
+<backslash> <i> <o> <t> <a> : "ι"  # latex \iota
+<backslash> <k> <a> <p> <p> <a> : "κ"  # latex \kappa
+<backslash> <l> <a> <m> <b> <d> <a> : "λ"  # latex \lambda
+<backslash> <m> <u> : "μ"  # latex \mu
+<backslash> <n> <u> : "ν"  # latex \nu
+<backslash> <x> <i> : "ξ"  # latex \xi
+<backslash> <o> <m> <i> <c> <r> <o> <n> : "ο"  # latex \omicron
+<backslash> <p> <i> : "π"  # latex \pi
+<backslash> <r> <h> <o> : "ρ"  # latex \rho
+<backslash> <s> <t> <i> <g> <m> <a> : "ς"  # latex \stigma
+<backslash> <s> <i> <g> <m> <a> : "σ"  # latex \sigma
+<backslash> <t> <a> <u> : "τ"  # latex \tau
+<backslash> <u> <p> <s> <i> <l> <o> <n> : "υ"  # latex \upsilon
+<backslash> <p> <h> <i> : "ϕ"  # latex \phi
+<backslash> <v> <a> <r> <p> <h> <i> : "φ"  # latex \varphi
+<backslash> <c> <h> <i> : "χ"  # latex \chi
+<backslash> <p> <s> <i> : "ψ"  # latex \psi
+<backslash> <o> <m> <e> <g> <a> : "ω"  # latex \omega
+<backslash> <A> <l> <p> <h> <a> : "Α"  # latex \Alpha
+<backslash> <B> <e> <t> <a> : "Β"  # latex \Beta
+<backslash> <G> <a> <m> <m> <a> : "Γ"  # latex \Gamma
+<backslash> <D> <e> <l> <t> <a> : "Δ"  # latex \Delta
+<backslash> <E> <p> <s> <i> <l> <o> <n> : "Ε"  # latex \Epsilon
+<backslash> <Z> <e> <t> <a> : "Ζ"  # latex \Zeta
+<backslash> <N> <u> : "Η"  # latex \Nu
+<backslash> <T> <h> <e> <t> <a> : "Θ"  # latex \Theta
+<backslash> <I> <o> <t> <a> : "Ι"  # latex \Iota
+<backslash> <K> <a> <p> <p> <a> : "Κ"  # latex \Kappa
+<backslash> <L> <a> <m> <b> <d> <a> : "Λ"  # latex \Lambda
+<backslash> <M> <u> : "Μ"  # latex \Mu
+<backslash> <N> <u> : "Ν"  # latex \Nu
+<backslash> <X> <i> : "Ξ"  # latex \Xi
+<backslash> <O> <m> <i> <c> <r> <o> <n> : "Ο"  # latex \Omicron
+<backslash> <P> <i> : "Π"  # latex \Pi
+<backslash> <R> <h> <o> : "Ρ"  # latex \Rho
+<backslash> <S> <i> <g> <m> <a> : "Σ"  # latex \Sigma
+<backslash> <T> <a> <u> : "Τ"  # latex \Tau
+<backslash> <U> <p> <s> <i> <l> <o> <n> : "Υ"  # latex \Upsilon
+<backslash> <P> <h> <i> : "Φ"  # latex \Phi
+<backslash> <C> <h> <i> : "Χ"  # latex \Chi
+<backslash> <P> <s> <i> : "Ψ"  # latex \Psi
+<backslash> <O> <m> <e> <g> <a> : "Ω"  # latex \Omega
