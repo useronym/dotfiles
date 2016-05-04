@@ -1,3 +1,5 @@
+include "%L"
+
 <backslash> <backslash> : "\\" # inserts a single \
 
 # Supersripts and subscripts
@@ -66,18 +68,20 @@
 <backslash> <c> <u> <p> : "∪"  # latex \cup
 <backslash> <t> <h> <e> <r> <e> <f> <o> <r> <e> : "∴"  # latex \therefore
 <backslash> <q> <e> <d> : "∎"  # latex \qed
-<backslash> <N> : "ℕ"  # latex \N
-<backslash> <Z> : "ℤ"  # latex \Z
-<backslash> <C> : "ℂ"  # latex \C
-<backslash> <Q> : "ℚ"  # latex \Q
-<backslash> <R> : "ℝ"  # latex \R
-<backslash> <E> : "𝔼"  # latex \E
-<backslash> <F> : "𝔽"  # latex \F
+<backslash> <b> <N> : "ℕ"  # latex \N
+<backslash> <b> <Z> : "ℤ"  # latex \Z
+<backslash> <b> <C> : "ℂ"  # latex \C
+<backslash> <b> <Q> : "ℚ"  # latex \Q
+<backslash> <b> <R> : "ℝ"  # latex \R
+<backslash> <b> <E> : "𝔼"  # latex \E
+<backslash> <b> <F> : "𝔽"  # latex \F
 <backslash> <i> <n> <f> <t> <y> : "∞"  # latex \infty
 <backslash> <e> <q> <u> <i> <v> : "≡"  # latex \equiv
 <backslash> <c> <o> <n> <g> : "≅"  # latex \cong
 <backslash> <n> <e> : "≠"  # latex \ne
 <backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
+<backslash> <p> <r> <o> <v> <a> <b> <l> <e> : "⊢"
+<backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨"
 <backslash> <p> <e> <r> <p> : "⊥"  # latex \perp
 <backslash> <v> <e> <e> : "∨"  # latex \vee
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge

@@ -1,7 +1,6 @@
 [options]
 font = Inconsolata-g 11
 geometry=1200x600
-mouse_autohide = true
 scrollback_lines = 5000
 
 [colors]
