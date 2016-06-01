@@ -41,7 +41,7 @@ include "%L"
 <backslash> <minus> <equal> : "—" # em dash
 
 # Arrows
-<backslash> <t> <o> : "→"  # latex \to
+<backslash> <t> <o> <space> : "→ "  # latex \to
 <backslash> <m> <a> <p> <s> <t> <o> : "↦"  # latex \mapsto
 <backslash> <g> <e> <t> <s> : "←"  # latex \gets
 <backslash> <i> <m> <p> <l> : "⇒" # latex \Rightarrow
@@ -51,8 +51,11 @@ include "%L"
 # Mathy stuffs
 <backslash> <f> <o> <r> <a> <l> <l> : "∀"  # latex \forall
 <backslash> <e> <x> <i> <s> <t> <s> : "∃"  # latex \exists
+<backslash> <t> <o> <p> : "⊤" # latex \top
+<backslash> <b> <o> <t> : "⊥" # latex \bot
 <backslash> <i> <n> <space> : "∈ "  # latex \in
 <backslash> <n> <i> : "∋"  # latex \ni
+<backslash> <n> <o> <i> <n> : "∉" #latex \notin
 <backslash> <e> <m> <p> <t> <y> : "∅"  # latex \empty
 <backslash> <p> <r> <o> <d> : "∏"  # latex \prod
 <backslash> <s> <u> <m> : "∑"  # latex \sum
@@ -80,8 +83,8 @@ include "%L"
 <backslash> <c> <o> <n> <g> : "≅"  # latex \cong
 <backslash> <n> <e> : "≠"  # latex \ne
 <backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
-<backslash> <p> <r> <o> <v> <a> <b> <l> <e> : "⊢"
-<backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨"
+<backslash> <p> <r> <o> <v> <a> <b> <l> <e> : "⊢" # latex \vdash
+<backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨" # latex \vDash
 <backslash> <p> <e> <r> <p> : "⊥"  # latex \perp
 <backslash> <v> <e> <e> : "∨"  # latex \vee
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
@@ -95,6 +98,7 @@ include "%L"
 <backslash> <O> <asterisk> : "⊛"  # latex \circledast
 <backslash> <l> <a> <n> <g> <l> <e> : "⟨"  # latex \langle
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
+<backslash> <l> <o> <z> <e> <n> <g> <e>: "◊" # latex \lozenge
 
 # Greek alphabet
 <backslash> <a> <l> <p> <h> <a> : "α"  # latex \alpha

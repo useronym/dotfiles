@@ -1,5 +1,5 @@
 [options]
-font = Inconsolata-g 11
+font = mononoki 12
 geometry=1200x600
 scrollback_lines = 5000
 
