@@ -20,5 +20,4 @@ fi
 compton -b
 desktop.sh &
 sxhkd &
-rofi -key-run F2 -fuzzy &
 unclutter -b

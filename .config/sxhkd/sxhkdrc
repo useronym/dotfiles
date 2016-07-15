@@ -122,6 +122,9 @@ super + Return
 super + alt + Return
     termite -c "$XDG_CONFIG_HOME/termite/config-dark"
 
+F2
+    rofi -show run
+
 super + d
     desktop.sh
 

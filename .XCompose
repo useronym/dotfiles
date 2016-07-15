@@ -99,6 +99,7 @@ include "%L"
 <backslash> <l> <a> <n> <g> <l> <e> : "⟨"  # latex \langle
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
 <backslash> <l> <o> <z> <e> <n> <g> <e>: "◊" # latex \lozenge
+<backslash> <d> <e> <g> <r> <e> <e> : "°"
 
 # Greek alphabet
 <backslash> <a> <l> <p> <h> <a> : "α"  # latex \alpha
