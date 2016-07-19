@@ -53,6 +53,7 @@ include "%L"
 <backslash> <e> <x> <i> <s> <t> <s> : "∃"  # latex \exists
 <backslash> <t> <o> <p> : "⊤" # latex \top
 <backslash> <b> <o> <t> : "⊥" # latex \bot
+<backslash> <s> <t> <a> <r> : "★" # latex \star
 <backslash> <i> <n> <space> : "∈ "  # latex \in
 <backslash> <n> <i> : "∋"  # latex \ni
 <backslash> <n> <o> <i> <n> : "∉" #latex \notin
@@ -69,6 +70,8 @@ include "%L"
 <backslash> <s> <e> <t> <m> <i> <n> <u> <s> : "∖"  # latex \setminus
 <backslash> <c> <a> <p> : "∩"  # latex \cap
 <backslash> <c> <u> <p> : "∪"  # latex \cup
+<backslash> <r> <h> <d> :"⊳" # latex \rhd
+<backslash> <l> <h> <d> :"⊲" # latex \lhd
 <backslash> <t> <h> <e> <r> <e> <f> <o> <r> <e> : "∴"  # latex \therefore
 <backslash> <q> <e> <d> : "∎"  # latex \qed
 <backslash> <b> <N> : "ℕ"  # latex \N
@@ -80,16 +83,17 @@ include "%L"
 <backslash> <b> <F> : "𝔽"  # latex \F
 <backslash> <i> <n> <f> <t> <y> : "∞"  # latex \infty
 <backslash> <e> <q> <u> <i> <v> : "≡"  # latex \equiv
+<backslash> <s> <i> <m> <e> <q> : "≃" # latex \simeq
 <backslash> <c> <o> <n> <g> : "≅"  # latex \cong
 <backslash> <n> <e> : "≠"  # latex \ne
 <backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
-<backslash> <p> <r> <o> <v> <a> <b> <l> <e> : "⊢" # latex \vdash
+<backslash> <p> <r> <o> <v> <e> <s> : "⊢" # latex \vdash
 <backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨" # latex \vDash
 <backslash> <p> <e> <r> <p> : "⊥"  # latex \perp
 <backslash> <v> <e> <e> : "∨"  # latex \vee
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
 <backslash> <n> <o> <t> : "¬"  # latex \not
-<backslash> <c> <d> <o> <t> : "⋅"  # latex \cdot
+<backslash> <c> <d> <o> <t> : "∙"  # latex \cdot
 <backslash> <c> <i> <r> <c> : "∘"  # latex \circ
 <backslash> <t> <i> <m> <e> <s> : "×"  # latex \times
 # <backslash> <o> <p> <l> <u> <s> : "⊕"  # latex \oplus
@@ -98,8 +102,11 @@ include "%L"
 <backslash> <O> <asterisk> : "⊛"  # latex \circledast
 <backslash> <l> <a> <n> <g> <l> <e> : "⟨"  # latex \langle
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
-<backslash> <l> <o> <z> <e> <n> <g> <e>: "◊" # latex \lozenge
+<backslash> <bracketleft> : "⟦" # latex \llbracket
+<backslash> <bracketright> : "⟧" # latex \rrbracket
+<backslash> <l> <o> <z> <e> <n> <g> <e> : "◊" # latex \lozenge
 <backslash> <d> <e> <g> <r> <e> <e> : "°"
+<backslash> <comma> : "⹁" # latex ?
 
 # Greek alphabet
 <backslash> <a> <l> <p> <h> <a> : "α"  # latex \alpha
