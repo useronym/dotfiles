@@ -70,11 +70,16 @@ include "%L"
 <backslash> <s> <e> <t> <m> <i> <n> <u> <s> : "∖"  # latex \setminus
 <backslash> <c> <a> <p> : "∩"  # latex \cap
 <backslash> <c> <u> <p> : "∪"  # latex \cup
+<backslash> <s> <q> <c> <u> <p> : "⊔" # latex \sqcup
+<backslash> <s> <q> <c> <a> <p> : "⊓" # latex \sqcap
+<backslash> <u> <p> <l> <u> <s> : "⊎" # latex \uplus
+<backslash> <U> <p> <l> <u> <s> : "⨄" # latex \Uplus
 <backslash> <r> <h> <d> :"⊳" # latex \rhd
 <backslash> <l> <h> <d> :"⊲" # latex \lhd
 <backslash> <t> <h> <e> <r> <e> <f> <o> <r> <e> : "∴"  # latex \therefore
 <backslash> <q> <e> <d> : "∎"  # latex \qed
 <backslash> <b> <N> : "ℕ"  # latex \N
+<backslash> <b> <B> : "𝔹"  # latex \N
 <backslash> <b> <Z> : "ℤ"  # latex \Z
 <backslash> <b> <C> : "ℂ"  # latex \C
 <backslash> <b> <Q> : "ℚ"  # latex \Q
