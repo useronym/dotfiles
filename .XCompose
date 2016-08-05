@@ -14,6 +14,7 @@ include "%L"
 <backslash> <asciicircum> <8> : "⁸"
 <backslash> <asciicircum> <9> : "⁹"
 <backslash> <asciicircum> <n> : "ⁿ"
+<backslash> <asciicircum> <r> : "ʳ"
 <backslash> <underscore> <0> : "₀"
 <backslash> <underscore> <1> : "₁"
 <backslash> <underscore> <2> : "₂"
@@ -109,6 +110,7 @@ include "%L"
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
 <backslash> <bracketleft> : "⟦" # latex \llbracket
 <backslash> <bracketright> : "⟧" # latex \rrbracket
+<backslash> <colon> <colon> : "∷" # latex ?
 <backslash> <l> <o> <z> <e> <n> <g> <e> : "◊" # latex \lozenge
 <backslash> <d> <e> <g> <r> <e> <e> : "°"
 <backslash> <comma> : "⹁" # latex ?
