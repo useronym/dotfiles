@@ -48,6 +48,8 @@ include "%L"
 <backslash> <i> <m> <p> <l> : "⇒" # latex \Rightarrow
 <backslash> <i> <m> <p> <r> : "⇐" # latex \Leftarrow
 <backslash> <i> <m> <p> <b> : "⇔" # latex \Leftrightarrow
+<backslash> <d> <o> <w> <n> : "↓" # latex \downarrow
+<backslash> <l> <e> <a> <d> <s> <t> <o> : "↝" # latex \leadsto
 
 # Mathy stuffs
 <backslash> <f> <o> <r> <a> <l> <l> : "∀"  # latex \forall
@@ -89,6 +91,7 @@ include "%L"
 <backslash> <b> <F> : "𝔽"  # latex \F
 <backslash> <i> <n> <f> <t> <y> : "∞"  # latex \infty
 <backslash> <e> <q> <u> <i> <v> : "≡"  # latex \equiv
+<backslash> <n> <e> <q> <u> <i> <v> : "≢"  # latex \not\equiv
 <backslash> <s> <i> <m> <e> <q> : "≃" # latex \simeq
 <backslash> <c> <o> <n> <g> : "≅"  # latex \cong
 <backslash> <n> <e> : "≠"  # latex \ne
@@ -99,7 +102,7 @@ include "%L"
 <backslash> <v> <e> <e> : "∨"  # latex \vee
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
 <backslash> <n> <o> <t> : "¬"  # latex \not
-<backslash> <c> <d> <o> <t> : "∙"  # latex \cdot
+<backslash> <c> <d> <o> <t> : "⋅"  # latex \cdot
 <backslash> <c> <i> <r> <c> : "∘"  # latex \circ
 <backslash> <t> <i> <m> <e> <s> : "×"  # latex \times
 # <backslash> <o> <p> <l> <u> <s> : "⊕"  # latex \oplus
@@ -166,3 +169,85 @@ include "%L"
 <backslash> <C> <h> <i> : "Χ"  # latex \Chi
 <backslash> <P> <s> <i> : "Ψ"  # latex \Psi
 <backslash> <O> <m> <e> <g> <a> : "Ω"  # latex \Omega
+
+# Caligraphy
+<backslash> <c> <a> <l> <A> : "𝓐"
+<backslash> <c> <a> <l> <B> : "𝓑"
+<backslash> <c> <a> <l> <C> : "𝓒"
+<backslash> <c> <a> <l> <D> : "𝓓"
+<backslash> <c> <a> <l> <E> : "𝓔"
+<backslash> <c> <a> <l> <F> : "𝓕"
+<backslash> <c> <a> <l> <G> : "𝓖"
+<backslash> <c> <a> <l> <H> : "𝓗"
+<backslash> <c> <a> <l> <I> : "𝓘"
+<backslash> <c> <a> <l> <J> : "𝓙"
+<backslash> <c> <a> <l> <K> : "𝓚"
+<backslash> <c> <a> <l> <L> : "𝓛"
+<backslash> <c> <a> <l> <M> : "𝓜"
+<backslash> <c> <a> <l> <N> : "𝓝"
+<backslash> <c> <a> <l> <O> : "𝓞"
+<backslash> <c> <a> <l> <P> : "𝓟"
+<backslash> <c> <a> <l> <Q> : "𝓠"
+<backslash> <c> <a> <l> <R> : "𝓡"
+<backslash> <c> <a> <l> <S> : "𝓢"
+<backslash> <c> <a> <l> <T> : "𝓣"
+<backslash> <c> <a> <l> <U> : "𝓤"
+<backslash> <c> <a> <l> <V> : "𝓥"
+<backslash> <c> <a> <l> <W> : "𝓦"
+<backslash> <c> <a> <l> <X> : "𝓧"
+<backslash> <c> <a> <l> <Y> : "𝓨"
+<backslash> <c> <a> <l> <Z> : "𝓩"
+
+# Fraktur
+<backslash> <f> <r> <a> <a> : "𝖆"
+<backslash> <f> <r> <a> <b> : "𝖇"
+<backslash> <f> <r> <a> <c> : "𝖈"
+<backslash> <f> <r> <a> <d> : "𝖉"
+<backslash> <f> <r> <a> <e> : "𝖊"
+<backslash> <f> <r> <a> <f> : "𝖋"
+<backslash> <f> <r> <a> <g> : "𝖌"
+<backslash> <f> <r> <a> <h> : "𝖍"
+<backslash> <f> <r> <a> <i> : "𝖎"
+<backslash> <f> <r> <a> <j> : "𝖏"
+<backslash> <f> <r> <a> <k> : "𝖐"
+<backslash> <f> <r> <a> <l> : "𝖑"
+<backslash> <f> <r> <a> <m> : "𝖒"
+<backslash> <f> <r> <a> <n> : "𝖓"
+<backslash> <f> <r> <a> <o> : "𝖔"
+<backslash> <f> <r> <a> <p> : "𝖕"
+<backslash> <f> <r> <a> <q> : "𝖖"
+<backslash> <f> <r> <a> <r> : "𝖗"
+<backslash> <f> <r> <a> <s> : "𝖘"
+<backslash> <f> <r> <a> <t> : "𝖙"
+<backslash> <f> <r> <a> <u> : "𝖚"
+<backslash> <f> <r> <a> <v> : "𝖛"
+<backslash> <f> <r> <a> <w> : "𝖜"
+<backslash> <f> <r> <a> <x> : "𝖝"
+<backslash> <f> <r> <a> <y> : "𝖞"
+<backslash> <f> <r> <a> <z> : "𝖟"
+<backslash> <f> <r> <a> <A> : "𝕬"
+<backslash> <f> <r> <a> <B> : "𝕭"
+<backslash> <f> <r> <a> <C> : "𝕮"
+<backslash> <f> <r> <a> <D> : "𝕯"
+<backslash> <f> <r> <a> <E> : "𝕰"
+<backslash> <f> <r> <a> <F> : "𝕱"
+<backslash> <f> <r> <a> <G> : "𝕲"
+<backslash> <f> <r> <a> <H> : "𝕳"
+<backslash> <f> <r> <a> <J> : "𝕴"
+<backslash> <f> <r> <a> <I> : "𝕵"
+<backslash> <f> <r> <a> <K> : "𝕶"
+<backslash> <f> <r> <a> <L> : "𝕷"
+<backslash> <f> <r> <a> <M> : "𝕸"
+<backslash> <f> <r> <a> <N> : "𝕹"
+<backslash> <f> <r> <a> <O> : "𝕺"
+<backslash> <f> <r> <a> <P> : "𝕻"
+<backslash> <f> <r> <a> <Q> : "𝕼"
+<backslash> <f> <r> <a> <R> : "𝕽"
+<backslash> <f> <r> <a> <S> : "𝕾"
+<backslash> <f> <r> <a> <T> : "𝕿"
+<backslash> <f> <r> <a> <U> : "𝖀"
+<backslash> <f> <r> <a> <V> : "𝖁"
+<backslash> <f> <r> <a> <W> : "𝖂"
+<backslash> <f> <r> <a> <X> : "𝖃"
+<backslash> <f> <r> <a> <Y> : "𝖄"
+<backslash> <f> <r> <a> <Z> : "𝖅"
