@@ -15,6 +15,7 @@ include "%L"
 <backslash> <asciicircum> <9> : "⁹"
 <backslash> <asciicircum> <n> : "ⁿ"
 <backslash> <asciicircum> <r> : "ʳ"
+<backslash> <asciicircum> <plus> : "⁺"
 <backslash> <underscore> <0> : "₀"
 <backslash> <underscore> <1> : "₁"
 <backslash> <underscore> <2> : "₂"
@@ -98,6 +99,7 @@ include "%L"
 <backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
 <backslash> <p> <r> <o> <v> <e> <s> : "⊢" # latex \vdash
 <backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨" # latex \vDash
+<backslash> <f> <o> <r> <c> <e> <s> : "⊩" # latex \Vdash
 <backslash> <p> <e> <r> <p> : "⊥"  # latex \perp
 <backslash> <v> <e> <e> : "∨"  # latex \vee
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
