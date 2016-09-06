@@ -13,9 +13,33 @@ include "%L"
 <backslash> <asciicircum> <7> : "⁷"
 <backslash> <asciicircum> <8> : "⁸"
 <backslash> <asciicircum> <9> : "⁹"
+<backslash> <asciicircum> <a> : "ᵃ"
+<backslash> <asciicircum> <b> : "ᵇ"
+<backslash> <asciicircum> <c> : "ᶜ"
+<backslash> <asciicircum> <d> : "ᵈ"
+<backslash> <asciicircum> <e> : "ᵉ"
+<backslash> <asciicircum> <f> : "ᶠ"
+<backslash> <asciicircum> <g> : "ᵍ"
+<backslash> <asciicircum> <h> : "ʰ"
+<backslash> <asciicircum> <i> : "ⁱ"
+<backslash> <asciicircum> <j> : "ʲ"
+<backslash> <asciicircum> <k> : "ᵏ"
+<backslash> <asciicircum> <l> : "ˡ"
+<backslash> <asciicircum> <m> : "ᵐ"
 <backslash> <asciicircum> <n> : "ⁿ"
+<backslash> <asciicircum> <o> : "ᵒ"
+<backslash> <asciicircum> <p> : "ᵖ"
 <backslash> <asciicircum> <r> : "ʳ"
+<backslash> <asciicircum> <s> : "ˢ"
+<backslash> <asciicircum> <t> : "ᵗ"
+<backslash> <asciicircum> <u> : "ᵘ"
+<backslash> <asciicircum> <v> : "ᵛ"
+<backslash> <asciicircum> <w> : "ʷ"
+<backslash> <asciicircum> <x> : "ˣ"
+<backslash> <asciicircum> <y> : "ʸ"
+<backslash> <asciicircum> <z> : "ᶻ"
 <backslash> <asciicircum> <plus> : "⁺"
+
 <backslash> <underscore> <0> : "₀"
 <backslash> <underscore> <1> : "₁"
 <backslash> <underscore> <2> : "₂"
@@ -26,10 +50,23 @@ include "%L"
 <backslash> <underscore> <7> : "₇"
 <backslash> <underscore> <8> : "₈"
 <backslash> <underscore> <9> : "₉"
+<backslash> <underscore> <a> : "ₐ"
+<backslash> <underscore> <e> : "ₑ"
+<backslash> <underscore> <h> : "ₕ"
+<backslash> <underscore> <i> : "ᵢ"
+<backslash> <underscore> <j> : "ⱼ"
 <backslash> <underscore> <k> : "ₖ"
 <backslash> <underscore> <l> : "ₗ"
 <backslash> <underscore> <m> : "ₘ"
 <backslash> <underscore> <n> : "ₙ"
+<backslash> <underscore> <o> : "ₒ"
+<backslash> <underscore> <p> : "ₚ"
+<backslash> <underscore> <r> : "ᵣ"
+<backslash> <underscore> <s> : "ₛ"
+<backslash> <underscore> <t> : "ₜ"
+<backslash> <underscore> <u> : "ᵤ"
+<backslash> <underscore> <v> : "ᵥ"
+<backslash> <underscore> <x> : "ₓ"
 <backslash> <underscore> <plus> : "₊"
 <backslash> <underscore> <minus> : "₋"
 <backslash> <underscore> <equal> : "₌"
@@ -45,6 +82,7 @@ include "%L"
 # Arrows
 <backslash> <t> <o> <space> : "→ "  # latex \to
 <backslash> <m> <a> <p> <s> <t> <o> : "↦"  # latex \mapsto
+<backslash> <m> <u> <l> <t> <i> <m> <a> <p> : "⊸"  # latex \multimap
 <backslash> <g> <e> <t> <s> : "←"  # latex \gets
 <backslash> <i> <m> <p> <l> : "⇒" # latex \Rightarrow
 <backslash> <i> <m> <p> <r> : "⇐" # latex \Leftarrow
@@ -66,7 +104,10 @@ include "%L"
 <backslash> <s> <u> <m> : "∑"  # latex \sum
 <backslash> <l> <e> : "≤"  # latex \le
 <backslash> <g> <e> <space> : "≥ "  # latex \ge
+<backslash> <p> <r> <e> <c> : "≺" # latex \prec
+<backslash> <p> <r> <e> <c> <e> <q> : "⪯" # latex \preceq
 <backslash> <p> <m> : "±"  # latex \pm
+<backslash> <plus> <plus> : "⧺"  # latex ?
 <backslash> <s> <u> <b> <s> <e> <t> : "⊂"  # latex \subset
 <backslash> <s> <u> <b> <s> <e> <q> : "⊆"  # latex \subseteq
 <backslash> <s> <u> <p> <s> <e> <t> : "⊃"  # latex \supset
@@ -96,8 +137,10 @@ include "%L"
 <backslash> <s> <i> <m> <e> <q> : "≃" # latex \simeq
 <backslash> <c> <o> <n> <g> : "≅"  # latex \cong
 <backslash> <n> <e> : "≠"  # latex \ne
+<backslash> <e> <q> <m> <a> <y> <b> <e> : "≟"  # latex \?
 <backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
 <backslash> <p> <r> <o> <v> <e> <s> : "⊢" # latex \vdash
+<backslash> <n> <p> <r> <o> <v> <e> <s> : "⊬" # latex \nvdash
 <backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨" # latex \vDash
 <backslash> <f> <o> <r> <c> <e> <s> : "⊩" # latex \Vdash
 <backslash> <p> <e> <r> <p> : "⊥"  # latex \perp
@@ -105,11 +148,14 @@ include "%L"
 <backslash> <w> <e> <d> <g> <e> : "∧"  # latex \wedge
 <backslash> <n> <o> <t> : "¬"  # latex \not
 <backslash> <c> <d> <o> <t> : "⋅"  # latex \cdot
+<backslash> <colon> <space> : "﹕ "  # latex \?
+<backslash> <b> <u> <l> <l> <e> <t> : "•"  # latex \bullet
 <backslash> <c> <i> <r> <c> : "∘"  # latex \circ
 <backslash> <t> <i> <m> <e> <s> : "×"  # latex \times
 # <backslash> <o> <p> <l> <u> <s> : "⊕"  # latex \oplus
 # <backslash> <c> <i> <r> <c> <l> <e> <d> <a> <s> <t> : "⊛"  # latex \circledast
-<backslash> <O> <plus> : "⊕"  # latex \circledast
+<backslash> <O> <plus> : "⊕"  # latex \oplus
+<backslash> <O> <x> : "⊗"  # latex \otimes
 <backslash> <O> <asterisk> : "⊛"  # latex \circledast
 <backslash> <l> <a> <n> <g> <l> <e> : "⟨"  # latex \langle
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
@@ -199,6 +245,16 @@ include "%L"
 <backslash> <c> <a> <l> <X> : "𝓧"
 <backslash> <c> <a> <l> <Y> : "𝓨"
 <backslash> <c> <a> <l> <Z> : "𝓩"
+<backslash> <c> <a> <l> <0> : "𝟎"
+<backslash> <c> <a> <l> <1> : "𝟏"
+<backslash> <c> <a> <l> <2> : "𝟐"
+<backslash> <c> <a> <l> <3> : "𝟑"
+<backslash> <c> <a> <l> <4> : "𝟒"
+<backslash> <c> <a> <l> <5> : "𝟓"
+<backslash> <c> <a> <l> <6> : "𝟔"
+<backslash> <c> <a> <l> <7> : "𝟕"
+<backslash> <c> <a> <l> <8> : "𝟖"
+<backslash> <c> <a> <l> <9> : "𝟗"
 
 # Fraktur
 <backslash> <f> <r> <a> <a> : "𝖆"
