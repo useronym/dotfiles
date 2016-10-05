@@ -3,8 +3,6 @@ export EDITOR='vim'
 
 eval "$(thefuck --alias)"
 
-alias ghc='stack ghc'
-alias ghci='stack ghci'
 alias v='vim'
 alias e='env TERM=xterm-256color emacs -nw'
 alias ls='ls --color'

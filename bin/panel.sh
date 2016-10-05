@@ -48,6 +48,7 @@ Backlight() {
 }
 
 Weather() {
+    #DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=723846&appid=1b3106852d5d55db8af8bdc5ccd2313f')
     DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3078610&appid=1b3106852d5d55db8af8bdc5ccd2313f')
     if [ "$?" -ne "0" ]; then return -1; fi
 
@@ -69,7 +70,7 @@ Weather() {
                 echo -ne '%{T2}\uf185%{T1}'
             fi;;
     esac
-    echo -n " $WEATHER, $(($TEMP-273))°C"
+    echo -n " %{A:termite -c $XDG_CONFIG_HOME/termite/config-dark --hold -e \"curl -q http://wttr.in/brno\":}$WEATHER, $(($TEMP-273))°C%{A}"
 }
 
 Mail() {

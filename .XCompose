@@ -165,6 +165,7 @@ include "%L"
 <backslash> <l> <o> <z> <e> <n> <g> <e> : "◊" # latex \lozenge
 <backslash> <d> <e> <g> <r> <e> <e> : "°"
 <backslash> <comma> : "⹁" # latex ?
+<backslash> <semicolon> : "⁏" # latex ?
 
 # Greek alphabet
 <backslash> <a> <l> <p> <h> <a> : "α"  # latex \alpha
@@ -178,6 +179,7 @@ include "%L"
 <backslash> <i> <o> <t> <a> : "ι"  # latex \iota
 <backslash> <k> <a> <p> <p> <a> : "κ"  # latex \kappa
 <backslash> <l> <a> <m> <b> <d> <a> : "λ"  # latex \lambda
+<backslash> <l> <a> <m> <b> <d> <b> : "ƛ"  # latex \lambda
 <backslash> <m> <u> : "μ"  # latex \mu
 <backslash> <n> <u> : "ν"  # latex \nu
 <backslash> <x> <i> : "ξ"  # latex \xi
