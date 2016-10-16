@@ -15,6 +15,8 @@ set postponed=+Drafts
 set mbox_type=Maildir
 mailboxes +inbox +sent
 
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
 set wait_key = no        # shut up, mutt
 set timeout = 3          # idle time before scanning
 set delete               # don't ask, just do

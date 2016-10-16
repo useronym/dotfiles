@@ -2,7 +2,8 @@
 
 PAD="  "
 BAT_BIAS=3 # My battery often decides to stop charging at what is reported as 97-99%
-IW="wlp2s0"
+WIFI="wlp2s0"
+ETH="enp0s20u1"
 
 Clock() {
     DATE=$(date "+%{T2}\uf017%{T1}  %a %B %-d  %H:%M")
@@ -26,10 +27,15 @@ Battery() {
     echo -n " $BAT %"
 }
 
-Wifi() {
-    WIFI_SSID=$(iw $IW link | grep 'SSID' | sed 's/SSID: //' | sed 's/\t//')
+Network() {
+    ETHERNET=$(ip link | grep $ETH | grep -o "state UP")
+    WIFI_SSID=$(iw $WIFI link | grep 'SSID' | sed 's/SSID: //' | sed 's/\t//')
     #WIFI_SIGNAL=$(iw $IW link | grep 'signal' | sed 's/signal: //' | sed 's/ dBm//' | sed 's/\t//')
-    echo -ne '%{A:termite -e nmtui:}%{T2}\uf1eb%{T1}' $WIFI_SSID'%{A}'
+    if [ "$ETHERNET" = "state UP" ]; then
+        echo -ne '%{A:termite -e nmtui:}%{T2}\uf0ac%{T1}' ethernet'%{A}'
+    else
+        echo -ne '%{A:termite -e nmtui:}%{T2}\uf1eb%{T1}' $WIFI_SSID'%{A}'
+    fi
 }
 
 Sound() {
@@ -85,11 +91,11 @@ Mail() {
 c=0
 while true; do
     if [ $((c % 10)) -eq 0 ]; then clock="$(Clock)"; fi
-    if [ $((c % 15)) -eq 0 ]; then wifi="$(Wifi)"; fi
+    if [ $((c % 15)) -eq 0 ]; then network="$(Network)"; fi
     if [ $((c % 60)) -eq 0 ]; then battery="$(Battery)"; fi
     if [ $((c % 60)) -eq 0 ]; then mail="$(Mail)"; fi
     if [ $((c % 900)) -eq 10 ]; then weather="$(Weather)"; fi
-    echo -n "%{l}"$PAD" $clock "$PAD" $weather %{r}$mail "$PAD" $wifi "$PAD" $(Sound) "$PAD" $battery "$PAD""
+    echo -n "%{l}"$PAD" $clock "$PAD" $weather %{r}$mail "$PAD" $network "$PAD" $(Sound) "$PAD" $battery "$PAD""
     echo -e "%{A2:poweroff:}%{A3:reboot:} "$PAD" %{T2}\uf011%{T1} "$PAD" %{A}%{A}"
     c=$((c+1));
     sleep 1;
