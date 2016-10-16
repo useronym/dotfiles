@@ -18,6 +18,6 @@ if [ "$MON" = "HDMI2 connected" ]; then
 fi
 
 compton -b
-desktop.sh &
+desktop-sunwait.sh &
 sxhkd &
 unclutter -b
