@@ -1,5 +1,9 @@
 An attempt to catalogue the software needed to run all this. WIP.
 
+bspwm
+sxhkd
+feh
+lemonbar
 nmtui
 alsautils
 mailcheck
