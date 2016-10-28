@@ -2,6 +2,6 @@
 
 while true
 do
-    ~/desktop.sh
+    desktop.sh
     sunwait wait 49.214238N 16.601385E
 done
