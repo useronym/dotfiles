@@ -1,3 +1,5 @@
+export PATH="$HOME/bin:$PATH"
+
 export GTK_IM_MODULE='uim'
 export QT_IM_MODULE='uim'
 uim-xim &
@@ -8,12 +10,12 @@ xsetroot -cursor_name left_ptr&
 
 setxkbmap -option compose:menu
 
-MON=$(xrandr -q | grep -o "HDMI2 connected")
-if [ "$MON" = "HDMI2 connected" ]; then
+MON=$(get_snd_mon.sh)
+if [ "$MON" != "" ]; then
     ~/.screenlayout/2m.sh
 fi
 
-compton -b
-desktop-sunwait.sh &
-sxhkd &
+compton --fading --fade-in-step 0.05 --fade-out-step 0.03 -b
+lid_daemon.sh &
 unclutter -b
+

@@ -24,7 +24,7 @@ Battery() {
     if [ "$STATUS" = "Charging" ]; then
         echo -ne ' %{T2}%{F#FF2C75FF}\uf0e7%{F-}%{T1}'
     fi
-    echo -n " $BAT %"
+    echo -n " $BAT%"
 }
 
 Network() {

@@ -1,0 +1,48 @@
+[admiral]
+items = ["left", "workspaces",
+         "center", "clock", "pad", "weather",
+         "right", "mail", "pad", "network", "pad", "sound", "pad", "battery", "pad"]
+
+[workspaces]
+path = "./i3_workspaces.py eDP1"
+
+[clock]
+path = "date '+%{T2}\uf017%{T1} %a %B %-d  %H:%M'"
+reload = 1
+
+[weather]
+path = "./weather.sh"
+reload = 600
+
+[battery]
+path = "./battery.sh"
+reload = 60
+
+[sound]
+path = "./sound.sh"
+reload = 1
+
+[network]
+path = "./network.sh"
+reload = 5
+
+[mail]
+path = "./mail.sh"
+reload = 60
+
+# Used for formatting lemonbar
+[pad]
+path = "echo '    '"
+static = true
+
+[left]
+path = "echo '%{l}'"
+static = true
+
+[center]
+path = "echo '%{c}'"
+static = true
+
+[right]
+path = "echo '%{r}'"
+static = true

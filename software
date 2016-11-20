@@ -1,11 +1,14 @@
 An attempt to catalogue the software needed to run all this. WIP.
 
-bspwm
-sxhkd
+zsh
+i3
+python-themer
+rofi
 feh
 lemonbar
+python-i3-fix-git
+admiral
 nmtui
 alsautils
 mailcheck
 font awesome
-sunwait
