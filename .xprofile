@@ -10,10 +10,7 @@ xsetroot -cursor_name left_ptr&
 
 setxkbmap -option compose:menu
 
-MON=$(get_snd_mon.sh)
-if [ "$MON" != "" ]; then
-    ~/.screenlayout/2m.sh
-fi
+xrandr --output $(get_snd_mon.sh) --auto --pos 0x0 --output eDP1 --primary --mode 1600x900 --pos 152x1080
 
 compton --fading --fade-in-step 0.05 --fade-out-step 0.03 -b
 lid_daemon.sh &

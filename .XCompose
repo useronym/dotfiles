@@ -174,7 +174,7 @@ include "%L"
 <backslash> <d> <e> <l> <t> <a> : "δ"  # latex \delta
 <backslash> <e> <p> <s> <i> <l> <o> <n> : "ε"  # latex \epsilon
 <backslash> <z> <e> <t> <a> : "ζ"  # latex \zeta
-<backslash> <n> <u> : "η"  # latex \nu
+<backslash> <e> <t> <a> : "η"  # latex \eta
 <backslash> <t> <h> <e> <t> <a> : "θ"  # latex \theta
 <backslash> <i> <o> <t> <a> : "ι"  # latex \iota
 <backslash> <k> <a> <p> <p> <a> : "κ"  # latex \kappa
@@ -201,7 +201,7 @@ include "%L"
 <backslash> <D> <e> <l> <t> <a> : "Δ"  # latex \Delta
 <backslash> <E> <p> <s> <i> <l> <o> <n> : "Ε"  # latex \Epsilon
 <backslash> <Z> <e> <t> <a> : "Ζ"  # latex \Zeta
-<backslash> <N> <u> : "Η"  # latex \Nu
+<backslash> <E> <t> <a> : "Η"  # latex \Eta
 <backslash> <T> <h> <e> <t> <a> : "Θ"  # latex \Theta
 <backslash> <I> <o> <t> <a> : "Ι"  # latex \Iota
 <backslash> <K> <a> <p> <p> <a> : "Κ"  # latex \Kappa

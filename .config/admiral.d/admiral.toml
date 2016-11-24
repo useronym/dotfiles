@@ -1,7 +1,6 @@
 [admiral]
 items = ["left", "workspaces",
-         "center", "clock", "pad", "weather",
-         "right", "mail", "pad", "network", "pad", "sound", "pad", "battery", "pad"]
+         "right", "mail", "pad", "weather", "pad", "network", "pad", "sound", "pad", "battery", "pad", "clock", "pad"]
 
 [workspaces]
 path = "./i3_workspaces.py eDP1"
@@ -32,7 +31,7 @@ reload = 60
 
 # Used for formatting lemonbar
 [pad]
-path = "echo '    '"
+path = "echo '   '"
 static = true
 
 [left]

@@ -1,15 +1,8 @@
 [admiral]
-items = ["left", "workspaces", "center", "right", "clock"]
+items = ["left", "workspaces"]
 
 [workspaces]
 path = "./i3_workspaces.py HDMI2,DP1"
-
-[title]
-path = "xtitle -s -t 100"
-
-[clock]
-path = "date '+%H:%M    '"
-reload = 1
 
 # Used for formatting lemonbar
 [left]
