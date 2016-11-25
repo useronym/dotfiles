@@ -8,33 +8,33 @@ set $secondary  {{ secondary }}
 set $tertiary   {{ tertiary }}
 set $warning    {{ special }}
 
-set $ws1  "1:  I  "
-set $ws2  "2:  II  "
-set $ws3  "3:  III  "
-set $ws4  "4:  IV  "
-set $ws5  "5:  V  "
-set $ws6  "6:  VI  "
-set $ws7  "7:  VII  "
-set $ws8  "8:  VIII  "
-set $ws9  "9:  IX  "
-set $ws10 "10:  X  "
+set $ws1  "1:     I     "
+set $ws2  "2:     II    "
+set $ws3  "3:    III    "
+set $ws4  "4:     IV    "
+set $ws5  "5:     V     "
+set $ws6  "6:     VI    "
+set $ws7  "7:    VII    "
+set $ws8  "8:    VIII   "
+set $ws9  "9:     IX    "
+set $ws10 "10:     X     "
 
 font pango:DejaVu Sans Mono 8
 
-exec_always feh --bg-scale ~/.config/themer/current/wallpaper.png
+exec_always feh --bg-fill ~/.config/themer/current/wallpaper.png --bg-fill ~/Pictures/Dark-Squares-Background.jpg
 
 floating_modifier $mod
 
-for_window [class="^.*"] border pixel 3
-gaps inner 5
-gaps outer 5
+for_window [class="^.*"] border pixel 5
+gaps inner 10
+gaps outer 0
 smart_gaps on
 smart_borders on
 
 bindsym $mod+q kill
 
 bindsym $mod+Return exec i3-sensible-terminal
-bindsym F2 exec rofi -font 'Mononoki 16' -show combi
+bindsym F2 exec rofi -font 'Mononoki 16' -show run
 
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%- unmute
@@ -100,47 +100,17 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
 # colors                BORDER      BACKGROUND TEXT        INDICATOR
-client.focused          $primary    $primary   $background $primary
-client.focused_inactive $background $primary   $foreground $background
-client.unfocused        $background $gray      $background $secondary
+client.focused          $primary    $primary   $primary $primary
+client.focused_inactive $background $background $background $background 
+client.unfocused        $background $background $background $background 
 client.urgent           $warning    $warning   $foreground $warning
 
 bar {
-    output HDMI2
-    output DP1
-    status_command    tail -f /dev/null
-    position          bottom
-    workspace_buttons yes
-    mode hide
- 
-    colors {
-        background $background
-        statusline $primary
-        
-        # Colors go <border> <background> <text> <indicator>
-        focused_workspace $secondary $background $foreground
-        active_workspace $primary $background $foreground
-        inactive_workspace $primary $background $foreground
-        urgent_workspace $foreground $warning
-    }
+    i3bar_command bar.sh
 }
 
 bar {
-    output eDP1
-    status_command    i3status
-    position          top
-    workspace_buttons yes
- 
-    colors {
-        background $background
-        statusline $primary
-        
-        # Colors go <border> <background> <text> <indicator>
-        focused_workspace $secondary $background $foreground
-        active_workspace $primary $background $foreground
-        inactive_workspace $primary $background $foreground
-        urgent_workspace $foreground $warning
-    }
+    i3bar_command bar2.sh
 }
 
 for_window [window_role="pop-up"] floating enable
@@ -152,15 +122,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym odiaeresis resize grow width 10 px or 10 ppt
-
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
