@@ -2,5 +2,5 @@ rofi.opacity: 80
 rofi.fullscreen: true
 rofi.padding: 300 
 rofi.modi: window,run,combi
-rofi.color-normal: #0e0e0e,#ffffff,#0e0e0e,#ffffff,#0e0e0e
-rofi.color-window: #0e0e0e,#0e0e0e
+rofi.color-normal: #00000000,#ffffff,#00000000,#ffffff,#ff000000
+rofi.color-window: #aa000000,#aa000000

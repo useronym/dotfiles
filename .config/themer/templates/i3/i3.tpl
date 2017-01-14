@@ -8,16 +8,15 @@ set $secondary  {{ secondary }}
 set $tertiary   {{ tertiary }}
 set $warning    {{ special }}
 
-set $ws1  "1:     I     "
-set $ws2  "2:     II    "
-set $ws3  "3:    III    "
-set $ws4  "4:     IV    "
-set $ws5  "5:     V     "
-set $ws6  "6:     VI    "
-set $ws7  "7:    VII    "
-set $ws8  "8:    VIII   "
-set $ws9  "9:     IX    "
-set $ws10 "10:     X     "
+set $ws1  "1:  1  "
+set $ws2  "2:  2  "
+set $ws3  "3:  3  "
+set $ws4  "4:  4  "
+set $ws5  "5:  5  "
+set $ws6  "6:  6  "
+set $ws7  "7:  7  "
+set $ws8  "8:  8  "
+set $ws9  "9:  9  "
 
 font pango:DejaVu Sans Mono 8
 
@@ -26,7 +25,7 @@ exec_always feh --bg-fill ~/.config/themer/current/wallpaper.png --bg-fill ~/Pic
 floating_modifier $mod
 
 for_window [class="^.*"] border pixel 5
-gaps inner 10
+gaps inner 20
 gaps outer 0
 smart_gaps on
 smart_borders on
@@ -76,7 +75,6 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
 bindsym $mod+Tab workspace back_and_forth
 
 workspace_auto_back_and_forth yes
