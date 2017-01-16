@@ -4,14 +4,21 @@
 
 #DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=723846&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3078610&appid=1b3106852d5d55db8af8bdc5ccd2313f')
-if [ "$?" -ne "0" ]; then return -1; fi
+if [ "$?" -ne "0" ]; then exit -1; fi
 
 echo -ne "%{B${config_primary:1:-1}} "
 
 WEATHER=$(echo $DATA | jq -r '.weather[0].main')
 TEMP=$(echo $DATA | jq -r '.main.temp')
 TEMP=${TEMP%.*}
-NIGHT=$(echo $WEATHER | cut -d " " -f1)
+
+SUNRISE=$(echo $DATA| jq -r '.sys.sunrise')
+SUNSET=$(echo $DATA| jq -r '.sys.sunset')
+NOW=$(date '+%s')
+if [ "$NOW" -le "$SUNRISE" ] || [ "$NOW" -ge "$SUNSET" ]; then
+    NIGHT="night"
+fi
+
 shopt -s nocasematch
 case $WEATHER in
     *fog* | *mist*) echo -ne '%{T2}\ue22d%{T1}';;
