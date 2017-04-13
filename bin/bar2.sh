@@ -2,12 +2,12 @@
 
 sleep 1 # so that bar.sh doesn't kill us
 
-. config.sh
+source "colors.sh"
 
 PANEL_MON=$(get_snd_mon.sh)
 if [[ "$PANEL_MON" == "" ]]; then
     exit 0
 fi
 
-admiral -c ~/.config/admiral.d/secondary.toml | lemonbar -b -f'Misc Ohsnap':size=13 -F ${config_foreground//\'} -B"#00000000" -gx25 $PANEL_MON | zsh
+admiral -c ~/.config/admiral.d/secondary.toml | lemonbar -b -f'Misc Ohsnap':size=13 -F$c_fg -B$c_bg -gx25 $PANEL_MON | zsh
 

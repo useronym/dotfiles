@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+path=~/dotfiles/schemes/$1
+feh --bg-fill $path/wall.png --bg-fill $path/wall.png
+cp $path/termite ~/.config/termite/config
+cp $path/colors.sh ~/bin/colors.sh
+
+xrdb $path/Xresources
+i3-msg restart
+killall -s USR1 termite

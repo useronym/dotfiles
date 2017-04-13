@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-. config.sh
+source "${HOME}/.cache/wal/colors.sh"
 
 #DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=723846&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3078610&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 if [ "$?" -ne "0" ]; then exit -1; fi
 
-echo -ne "%{B${config_primary:1:-1}} "
+echo -ne "%{B$color1} "
 
 WEATHER=$(echo $DATA | jq -r '.weather[0].main')
 TEMP=$(echo $DATA | jq -r '.main.temp')

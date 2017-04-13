@@ -39,6 +39,7 @@ include "%L"
 <backslash> <asciicircum> <y> : "ʸ"
 <backslash> <asciicircum> <z> : "ᶻ"
 <backslash> <asciicircum> <plus> : "⁺"
+<backslash> <asciicircum> <minus> : "⁻"
 
 <backslash> <underscore> <0> : "₀"
 <backslash> <underscore> <1> : "₁"
@@ -78,6 +79,9 @@ include "%L"
 <backslash> <period> <period> : "…"  # latex \ldots
 <backslash> <minus> <minus> : "–" # en dash
 <backslash> <minus> <equal> : "—" # em dash
+<backslash> <c> <h> <e> <c> <k> : "✓" # em dash
+<backslash> <c> <r> <o> <s> <s> : "✗" # em dash
+
 
 # Arrows
 <backslash> <t> <o> <space> : "→ "  # latex \to
@@ -87,8 +91,10 @@ include "%L"
 <backslash> <i> <m> <p> <l> : "⇒" # latex \Rightarrow
 <backslash> <i> <m> <p> <r> : "⇐" # latex \Leftarrow
 <backslash> <i> <m> <p> <b> : "⇔" # latex \Leftrightarrow
+<backslash> <u> <p> <space> : "↑" # latex \uparrow
 <backslash> <d> <o> <w> <n> : "↓" # latex \downarrow
 <backslash> <l> <e> <a> <d> <s> <t> <o> : "↝" # latex \leadsto
+<backslash> <f> <r> <o> <m> <t> <o> : "⇄" # latex \leadsto
 
 # Mathy stuffs
 <backslash> <f> <o> <r> <a> <l> <l> : "∀"  # latex \forall
@@ -135,10 +141,10 @@ include "%L"
 <backslash> <e> <q> <u> <i> <v> : "≡"  # latex \equiv
 <backslash> <n> <e> <q> <u> <i> <v> : "≢"  # latex \not\equiv
 <backslash> <s> <i> <m> <e> <q> : "≃" # latex \simeq
+<backslash> <a> <p> <p> <r> <o> <x> : "≈" # latex \approx
 <backslash> <c> <o> <n> <g> : "≅"  # latex \cong
-<backslash> <n> <e> : "≠"  # latex \ne
+<backslash> <n> <e> <space> : "≠ "  # latex \ne
 <backslash> <e> <q> <m> <a> <y> <b> <e> : "≟"  # latex \?
-<backslash> <a> <p> <p> <r> <o> <x> : "≈"  # latex \approx
 <backslash> <p> <r> <o> <v> <e> <s> : "⊢" # latex \vdash
 <backslash> <n> <p> <r> <o> <v> <e> <s> : "⊬" # latex \nvdash
 <backslash> <e> <n> <t> <a> <i> <l> <s> : "⊨" # latex \vDash
@@ -166,6 +172,9 @@ include "%L"
 <backslash> <d> <e> <g> <r> <e> <e> : "°"
 <backslash> <comma> : "⹁" # latex ?
 <backslash> <semicolon> : "⁏" # latex ?
+<backslash> <b> <o> <x> : "□" # latex ?
+<backslash> <f> <l> <a> <t> : "♭" # latex ?
+<backslash> <s> <h> <a> <r> <p> : "♯" # latex ?
 
 # Greek alphabet
 <backslash> <a> <l> <p> <h> <a> : "α"  # latex \alpha
