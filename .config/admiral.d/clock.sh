@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-. config.sh
+source "colors.sh"
 
-echo -ne $(date "+%{B${config_primary:1:-1}}%{T2} \ue151%{T1}%{B-} %a %B %-d  %H:%M") " "
+echo -ne $(date "+%{B$c_bg}%{T2} \ue151%{T1}%{B-} %a %B %-d  %H:%M") " "

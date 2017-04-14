@@ -11,15 +11,9 @@
 
 import sys
 import time
-import subprocess
-import yaml
 from os.path import expanduser
 
 import i3
-
-
-# get color config from the themer
-config = yaml.load(open(expanduser("~/.config/themer/current/colors.yaml"), "r"))
 
 
 class i3ws(object):
@@ -57,7 +51,7 @@ class i3ws(object):
             if workspace['output'] in self.output_names:
                 name = workspace['name'].split(':')[1]
                 if workspace['focused']:
-                    out += '%{B' + config['primary'] + '}' + name + '%{B-}'
+                    out += '%{R}' + name + '%{R}'
                 else:
                     out += name
         return out

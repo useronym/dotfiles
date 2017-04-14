@@ -2,18 +2,18 @@
 
 BAT_BIAS=3 # My battery often decides to stop charging at what is reported as 97-99%
 
-source "${HOME}/.cache/wal/colors.sh"
+source "colors.sh"
 
 BAT=$(cat /sys/class/power_supply/BAT0/capacity)
 BAT=$(((BAT + BAT_BIAS) >= 100 ? 100 : BAT))
 
 STATUS=$(cat /sys/class/power_supply/BAT0/status)
 if [ "$STATUS" = "Charging" ]; then
-    echo -ne "%{B$color3} "
+    echo -ne "%{B$c_blue} "
 elif [ "$BAT" -le "9" ]; then
-    echo -ne "%{B$color2} "
+    echo -ne "%{B$c_red} "
 else
-    echo -ne "%{B$color1} "
+    echo -ne "%{B$c_bg} "
 fi
 case $BAT in
     9* | 100) echo -ne '%{T2}\ue24b%{T1}';;
