@@ -2,7 +2,7 @@ An attempt to catalogue the software needed to run all this. WIP.
 
 zsh
 i3
-python-themer
+sunwait
 rofi
 feh
 lemonbar
@@ -10,9 +10,6 @@ python-i3-fix-git
 admiral
 nmtui
 alsautils
-mutt
-mu
-jq
 mailcheck
 ohsnap
 siji
