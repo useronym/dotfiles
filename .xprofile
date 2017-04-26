@@ -18,7 +18,7 @@ unclutter -b
 
 sunwait poll 49.2123269N 16.604716E
 if [ $? -eq 2 ]; then
-  scheme.sh white
+  scheme white
 else
-  scheme.sh black
+  scheme black
 fi
