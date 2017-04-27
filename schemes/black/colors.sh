@@ -1,4 +1,4 @@
 c_fg='#FFFFFF'
 c_bg='#000000'
-c_red='#CE2029' # fire engine red
-c_blue='#7DF9FF' # electric blue
+c_red='#E92f2f'
+c_blue='#3B48E3'
