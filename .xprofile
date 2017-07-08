@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 export GTK_IM_MODULE='uim'
 export QT_IM_MODULE='uim'
