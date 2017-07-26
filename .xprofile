@@ -16,7 +16,8 @@ compton --fading --fade-in-step 0.05 --fade-out-step 0.03 -b
 lid_daemon.sh &
 unclutter -b
 
-sunwait poll 49.2123269N 16.604716E
+#sunwait poll 49.2123269N 16.604716E
+sunwait poll 63.414529N 10.441891E
 if [ $? -eq 2 ]; then
   scheme white
 else
