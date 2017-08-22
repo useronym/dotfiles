@@ -1,5 +1,3 @@
-An attempt to catalogue the software needed to run all this. WIP.
-
 zsh
 i3
 sunwait
@@ -13,3 +11,4 @@ alsautils
 mailcheck
 ohsnap
 siji
+clipmenu

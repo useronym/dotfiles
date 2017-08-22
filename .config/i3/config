@@ -26,7 +26,8 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec termite --class=Ftermite
 for_window [class="Ftermite"] floating enable
 
-bindsym F2 exec rofi -font 'Mononoki 16' -show run
+bindsym $mod+a exec rofi -font 'Mononoki 16' -show run
+bindsym $mod+c exec clipmenu
 
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%- unmute
@@ -59,18 +60,15 @@ bindsym $mod+e layout toggle split
 bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+space floating toggle
 
-bindsym $mod+a focus parent
-#bindsym $mod+d focus child
-
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
+bindsym F1 workspace $ws1
+bindsym F2 workspace $ws2
+bindsym F3 workspace $ws3
+bindsym F4 workspace $ws4
+bindsym F5 workspace $ws5
+bindsym F6 workspace $ws6
+bindsym F7 workspace $ws7
+bindsym F8 workspace $ws8
+bindsym F9 workspace $ws9
 bindsym $mod+Tab workspace back_and_forth
 
 workspace_auto_back_and_forth yes
