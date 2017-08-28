@@ -6,6 +6,7 @@ export EDITOR='emacsclient -c -t'
 #eval "$(thefuck --alias)"
 
 alias v='vim'
+alias e='emacs'
 alias ls='ls --color'
 alias wtr='curl -q http://wttr.in/brno'
 
