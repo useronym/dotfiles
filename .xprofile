@@ -12,7 +12,7 @@ setxkbmap -option compose:menu
 
 xrandr --output $(get_snd_mon.sh) --auto --pos 0x0 --output eDP1 --primary --mode 1600x900 --pos 152x1080
 
-compton --fading --fade-in-step 0.05 --fade-out-step 0.03 -b
+compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-step 0.05 --fade-out-step 0.03 -b
 lid_daemon.sh &
 unclutter -b
 
