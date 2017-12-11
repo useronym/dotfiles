@@ -108,7 +108,7 @@ include "%L"
 <backslash> <e> <m> <p> <t> <y> : "∅"  # latex \empty
 <backslash> <p> <r> <o> <d> : "∏"  # latex \prod
 <backslash> <s> <u> <m> : "∑"  # latex \sum
-<backslash> <l> <e> : "≤"  # latex \le
+<backslash> <l> <e> <space> : "≤"  # latex \le
 <backslash> <g> <e> <space> : "≥ "  # latex \ge
 <backslash> <p> <r> <e> <c> : "≺" # latex \prec
 <backslash> <p> <r> <e> <c> <e> <q> : "⪯" # latex \preceq
