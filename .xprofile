@@ -16,8 +16,7 @@ compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-st
 lid_daemon.sh &
 unclutter -b
 
-#sunwait poll 49.2123269N 16.604716E
-sunwait poll 63.414529N 10.441891E
+sunwait poll 49.2123269N 16.604716E
 if [ $? -eq 2 ]; then
   scheme white
 else
