@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BAT_BIAS=3 # My battery often decides to stop charging at what is reported as 97-99%
+BAT_BIAS=4 # My battery often decides to stop charging at what is reported as 97-99%
 
 source "colors.sh"
 
@@ -9,12 +9,13 @@ BAT=$(((BAT + BAT_BIAS) >= 100 ? 100 : BAT))
 
 STATUS=$(cat /sys/class/power_supply/BAT0/status)
 if [ "$STATUS" = "Charging" ]; then
-    echo -ne "%{B$c_blue} "
+    echo -ne "%{F$c_blue}"
 elif [ "$BAT" -le "9" ]; then
-    echo -ne "%{B$c_red} "
+    echo -ne "%{F$c_red}"
 else
-    echo -ne "%{B$c_bg} "
+    echo -ne "%{F$c_fg}"
 fi
+echo -ne '%{R} '
 case $BAT in
     9* | 100) echo -ne '%{T2}\ue24b%{T1}';;
     8*)       echo -ne '%{T2}\ue24a%{T1}';;
@@ -27,5 +28,5 @@ case $BAT in
     1*)       echo -ne '%{T2}\ue243%{T1}';;
     *)        echo -ne '%{T2}\ue242%{T1}';;
 esac
-echo -ne '%{B-}'
+echo -ne '%{R}%{F-}'
 echo -n " $BAT% "

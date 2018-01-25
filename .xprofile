@@ -5,7 +5,7 @@ export QT_IM_MODULE='uim'
 uim-xim &
 export XMODIFIERS='@im=uim'
 
-xset r rate 250 30
+xset r rate 200 33
 xsetroot -cursor_name left_ptr&
 
 setxkbmap -option compose:menu
@@ -13,7 +13,7 @@ setxkbmap -option compose:menu
 xrandr --output $(get_snd_mon.sh) --auto --pos 0x0 --output eDP1 --primary --mode 1600x900 --pos 152x1080
 
 compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-step 0.1 --fade-out-step 0.1 -b
-lid_daemon.sh &
+#lid_daemon.sh &
 unclutter -b
 
 sunwait poll 49.2123269N 16.604716E

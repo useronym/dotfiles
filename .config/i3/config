@@ -47,9 +47,6 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+Shift+u move workspace to output up
-bindsym $mod+Shift+d move workspace to output down
-
 bindsym $mod+b split h
 bindsym $mod+v split v
 
@@ -78,20 +75,20 @@ workspace_auto_back_and_forth yes
 bindsym $mod+Control+Shift+Left move window to workspace prev
 bindsym $mod+m move window to workspace next
 
-bindsym $mod+Control+Shift+h move workspace to output left
-bindsym $mod+Control+Shift+j move workspace to output down
-bindsym $mod+Control+Shift+k move workspace to output up
-bindsym $mod+Control+Shift+l move workspace to output right 
+bindsym $mod+Control+h move workspace to output left
+bindsym $mod+Control+j move workspace to output down
+bindsym $mod+Control+k move workspace to output up
+bindsym $mod+Control+l move workspace to output right 
 
-bindsym $mod+Shift+F1 move container to workspace number $ws1
-bindsym $mod+Shift+F2 move container to workspace number $ws2
-bindsym $mod+Shift+F3 move container to workspace number $ws3
-bindsym $mod+Shift+F4 move container to workspace number $ws4
-bindsym $mod+Shift+F5 move container to workspace number $ws5
-bindsym $mod+Shift+F6 move container to workspace number $ws6
-bindsym $mod+Shift+F7 move container to workspace number $ws7
-bindsym $mod+Shift+F8 move container to workspace number $ws8
-bindsym $mod+Shift+F9 move container to workspace number $ws9
+bindsym $mod+F1 move container to workspace number $ws1
+bindsym $mod+F2 move container to workspace number $ws2
+bindsym $mod+F3 move container to workspace number $ws3
+bindsym $mod+F4 move container to workspace number $ws4
+bindsym $mod+F5 move container to workspace number $ws5
+bindsym $mod+F6 move container to workspace number $ws6
+bindsym $mod+F7 move container to workspace number $ws7
+bindsym $mod+F8 move container to workspace number $ws8
+bindsym $mod+F9 move container to workspace number $ws9
 
 
 set_from_resource $fg i3wm.foreground #000000

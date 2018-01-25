@@ -6,7 +6,6 @@ DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=723846&appid=1b31
 #DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3078610&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 if [ "$?" -ne "0" ]; then exit -1; fi
 
-echo -ne "%{B$c_bg} "
 
 WEATHER=$(echo $DATA | jq -r '.weather[0].main')
 TEMP=$(echo $DATA | jq -r '.main.temp')
@@ -19,6 +18,7 @@ if [ "$NOW" -le "$SUNRISE" ] || [ "$NOW" -ge "$SUNSET" ]; then
     NIGHT="night"
 fi
 
+echo -ne '%{R} '
 shopt -s nocasematch
 case $WEATHER in
     *fog* | *mist*) echo -ne '%{T2}\ue22d%{T1}';;
@@ -38,5 +38,5 @@ case $WEATHER in
             echo -ne '%{T2}\ue234%{T1}'
         fi;;
 esac
-echo -ne '%{B-}'
+echo -ne '%{R}'
 echo -n " $WEATHER, $(($TEMP-273))°C "
