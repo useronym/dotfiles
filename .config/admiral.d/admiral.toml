@@ -31,7 +31,7 @@ reload = 60
 
 # Used for formatting lemonbar
 [pad]
-path = "echo '                                                                                              '"
+path = "echo '                                                                                                                                              '"
 static = true
 
 [under]

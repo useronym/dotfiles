@@ -16,12 +16,13 @@ compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-st
 #lid_daemon.sh &
 unclutter -b
 
-sunwait poll 49.2123269N 16.604716E
-if [ $? -eq 2 ]; then
-  scheme white
-else
-  scheme black
-fi
+scheme green
+#sunwait poll 49.2123269N 16.604716E
+#if [ $? -eq 2 ]; then
+#  scheme white
+#else
+#  scheme black
+#fi
 
 export RUST_SRC_PATH='/usr/src/rust/src'
 

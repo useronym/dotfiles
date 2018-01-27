@@ -1,5 +1,5 @@
 [admiral]
-items = ["left", "workspaces"]
+items = ["over", "left", "workspaces", "pad", "coover"]
 
 [workspaces]
 path = "./i3_workspaces.py HDMI2,DP1"
@@ -15,4 +15,16 @@ static = true
 
 [right]
 path = "echo '%{r}'"
+static = true
+
+[over]
+path = "echo '%{+o}'"
+static = true
+
+[coover]
+path = "echo '%{-o}'"
+static = true
+
+[pad]
+path = "echo '                                                                                                                                                                                                                                                                      '"
 static = true

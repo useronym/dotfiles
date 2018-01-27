@@ -6,8 +6,8 @@ export EDITOR='vim'
 #eval "$(thefuck --alias)"
 
 alias v='vim'
-alias e='emacs'
+alias e='emacs -nw'
 alias ls='ls --color'
-alias wtr='curl -q http://wttr.in/brno'
+alias wtr="curl -q 'http://wttr.in/stary smokovec'"
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
