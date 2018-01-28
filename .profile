@@ -2,8 +2,9 @@ export PATH="$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 export BROWSER='chromium'
 export EDITOR='vim'
+export KEYTIMEOUT=1
 
-#eval "$(thefuck --alias)"
+bindkey -v
 
 alias v='vim'
 alias e='emacs -nw'

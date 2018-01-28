@@ -5,6 +5,7 @@ feh --bg-fill $path/wall.png --bg-fill $path/wall.png
 cp $path/termite ~/.config/termite/config
 cp $path/colors.sh ~/bin/colors.sh
 
-xrdb $path/Xresources
+cp $path/Xresources ~/.Xresources
+xrdb ~/.Xresources
 i3-msg restart
 killall -s USR1 termite
