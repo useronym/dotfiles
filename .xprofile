@@ -13,16 +13,9 @@ setxkbmap -option compose:menu
 xrandr --output $(get_snd_mon.sh) --auto --pos 0x0 --output eDP1 --primary --mode 1600x900 --pos 152x1080
 
 compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-step 0.1 --fade-out-step 0.1 -b
-#lid_daemon.sh &
 unclutter -b
 
-scheme green
-#sunwait poll 49.2123269N 16.604716E
-#if [ $? -eq 2 ]; then
-#  scheme white
-#else
-#  scheme black
-#fi
+scheme white
 
-export RUST_SRC_PATH='/usr/src/rust/src'
+sxhdk &
 
