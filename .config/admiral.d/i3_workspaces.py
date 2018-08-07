@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # 
 # Print i3 workspaces on a given output on every change.
 # 
