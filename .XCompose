@@ -79,8 +79,9 @@ include "%L"
 <backslash> <period> <period> : "…"  # latex \ldots
 <backslash> <minus> <minus> : "–" # en dash
 <backslash> <minus> <equal> : "—" # em dash
-<backslash> <c> <h> <e> <c> <k> : "✓" # em dash
-<backslash> <c> <r> <o> <s> <s> : "✗" # em dash
+<backslash> <c> <h> <e> <c> <k> : "✓"
+<backslash> <c> <r> <o> <s> <s> : "✗"
+<backslash> <n> <o> <t> <e> : "♪"
 
 
 # Arrows

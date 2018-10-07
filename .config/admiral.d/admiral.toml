@@ -23,7 +23,7 @@ reload = 1
 
 [network]
 path = "./network.sh"
-reload = 5
+reload = 1
 
 [mail]
 path = "./mail.sh"
