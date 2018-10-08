@@ -21,11 +21,11 @@ down_mb=$(bc <<< "scale=2; $down / 1000000")
 up_mb=$(bc <<< "scale=2; $up / 1000000")
 
 # Get total bandwidth usage since start of session.
-total=$(cat /dev/net/dev | grep $WIFI | sed -r 's/[ \t]+/ /g' | cut -d ' ' -f 2,10)
+total=$(cat /proc/net/dev | grep $WIFI | sed -r 's/[ \t]+/ /g' | cut -d ' ' -f 2,10)
 down_total=$(echo $total | cut -d ' ' -f 1)
 up_total=$(echo $total | cut -d ' ' -f 2)
-down_total_mb=$((down_total / 1000000))
-up_total_mb=$((up_total / 1000000))
+down_total_mb=$(($down_total / 1000000))
+up_total_mb=$(($up_total / 1000000))
 
 echo -ne "%{T2}%{R} \ue12c%{R}%{T1} "$(printf "%.2f" $down_mb)/s" | $down_total_mb"'MB '
 echo -ne "%{T2}%{R} \ue12b%{R}%{T1} "$(printf "%.2f" $up_mb)/s" | $up_total_mb"'MB '
