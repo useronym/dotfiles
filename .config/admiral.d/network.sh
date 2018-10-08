@@ -13,11 +13,19 @@ else
     echo -ne '%{A:termite -e nmtui:}%{T2}%{R} \ue1af%{R}%{T1}%{B-}' $WIFI_SSID '%{A}'
 fi
 
+# Get bandwidths usage in the last second
 band=$(get_bandwidth.sh)
 down=$(echo $band | cut -d ' ' -f 1)
 up=$(echo $band | cut -d ' ' -f 2)
 down_mb=$(bc <<< "scale=2; $down / 1000000")
 up_mb=$(bc <<< "scale=2; $up / 1000000")
 
-echo -ne "%{T2} \ue12c%{T1}"$(printf "%.2f" $down_mb)/s
-echo -ne "%{T2} \ue12b%{T1}"$(printf "%.2f" $up_mb)/s' '
+# Get total bandwidth usage since start of session.
+total=$(cat /dev/net/dev | grep $WIFI | sed -r 's/[ \t]+/ /g' | cut -d ' ' -f 2,10)
+down_total=$(echo $total | cut -d ' ' -f 1)
+up_total=$(echo $total | cut -d ' ' -f 2)
+down_total_mb=$((down_total / 1000000))
+up_total_mb=$((up_total / 1000000))
+
+echo -ne "%{T2}%{R} \ue12c%{R}%{T1} "$(printf "%.2f" $down_mb)/s" | $down_total_mb"'MB '
+echo -ne "%{T2}%{R} \ue12b%{R}%{T1} "$(printf "%.2f" $up_mb)/s" | $up_total_mb"'MB '
