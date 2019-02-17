@@ -16,12 +16,14 @@ xrandr --output $(get_snd_mon.sh) --auto --pos 0x0 --output eDP1 --primary --mod
 compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-step 0.1 --fade-out-step 0.1 -b
 unclutter -b
 
-sunwait poll 49.2123269N 16.604716E
-if [ $? -eq 2 ]; then
-  scheme white
-else
-  scheme black
-fi
+scheme mountain
+
+# sunwait poll 49.2123269N 16.604716E
+# if [ $? -eq 2 ]; then
+#   scheme white
+# else
+#   scheme black
+# fi
 
 sxhdk &
 

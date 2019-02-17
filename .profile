@@ -8,6 +8,7 @@ alias v='vim'
 alias e='emacs -nw'
 alias ls='ls --color'
 alias wtr="curl -q 'http://wttr.in/stary smokovec'"
+alias ls="exa --long --header --git"
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 

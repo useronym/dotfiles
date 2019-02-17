@@ -81,7 +81,8 @@ include "%L"
 <backslash> <minus> <equal> : "—" # em dash
 <backslash> <c> <h> <e> <c> <k> : "✓"
 <backslash> <c> <r> <o> <s> <s> : "✗"
-<backslash> <n> <o> <t> <e> : "♪"
+<backslash> <m> <u> <s> <i> <c> : "♪"
+<backslash> <v> <e> <g> <a> <n> : "Ⓥ"
 
 
 # Arrows
@@ -168,6 +169,10 @@ include "%L"
 <backslash> <r> <a> <n> <g> <l> <e> : "⟩"  # latex \rangle
 <backslash> <bracketleft> : "⟦" # latex \llbracket
 <backslash> <bracketright> : "⟧" # latex \rrbracket
+<backslash> <underscore> <bracketleft> : "⌊" # latex ?
+<backslash> <underscore> <bracketright> : "⌋" # latex ?
+<backslash> <asciicircum> <bracketleft> : "⌈" # latex ?
+<backslash> <asciicircum> <bracketright> : "⌉" # latex ?
 <backslash> <colon> <colon> : "∷" # latex ?
 <backslash> <l> <o> <z> <e> <n> <g> <e> : "◊" # latex \lozenge
 <backslash> <d> <e> <g> <r> <e> <e> : "°"
