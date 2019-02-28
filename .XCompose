@@ -195,7 +195,7 @@ include "%L"
 <backslash> <k> <a> <p> <p> <a> : "κ"  # latex \kappa
 <backslash> <l> <a> <m> <b> <d> <a> : "λ"  # latex \lambda
 <backslash> <l> <a> <m> <b> <d> <b> : "ƛ"  # latex \lambda
-<backslash> <m> <u> : "μ"  # latex \mu
+<backslash> <m> <u> <space> : "μ"  # latex \mu
 <backslash> <n> <u> : "ν"  # latex \nu
 <backslash> <x> <i> : "ξ"  # latex \xi
 <backslash> <o> <m> <i> <c> <r> <o> <n> : "ο"  # latex \omicron
