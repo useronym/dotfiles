@@ -5,9 +5,9 @@ source "colors.sh"
 # Drøbak
 #DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3158960&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 # Pod lesom
-DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=723846&appid=1b3106852d5d55db8af8bdc5ccd2313f')
+#DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=723846&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 # Brno
-#DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3078610&appid=1b3106852d5d55db8af8bdc5ccd2313f')
+DATA=$(curl 'http://api.openweathermap.org/data/2.5/weather?id=3078610&appid=1b3106852d5d55db8af8bdc5ccd2313f')
 if [ "$?" -ne "0" ]; then exit -1; fi
 
 

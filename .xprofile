@@ -10,13 +10,13 @@ xsetroot -cursor_name left_ptr&
 
 setxkbmap -option compose:menu
 
-xrandr --output $(get_snd_mon.sh) --auto --pos 0x0 --output eDP1 --primary --mode 1600x900 --below $(get_snd_mon.sh)
+xrandr --output $(get_snd_mon.sh) --auto --primary --pos 0x0 --output eDP1 --mode 1600x900 --below $(get_snd_mon.sh)
 #./.screenlayout/2mlv.sh
 
 compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-step 0.1 --fade-out-step 0.1 -b
 unclutter -b
 
-scheme mountain
+scheme north
 
 # sunwait poll 49.2123269N 16.604716E
 # if [ $? -eq 2 ]; then
