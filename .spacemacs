@@ -127,7 +127,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(sanityinc-tomorrow-bright
+   dotspacemacs-themes '(sanityinc-solarized-light
+                         sanityinc-tomorrow-bright
                          sanityinc-tomorrow-day)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -232,11 +233,11 @@ values."
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
-   dotspacemacs-active-transparency 85
+   dotspacemacs-active-transparency 95
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's inactive or deselected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
-   dotspacemacs-inactive-transparency 85
+   dotspacemacs-inactive-transparency 95
    ;; If non nil show the titles of transient states. (default t)
    dotspacemacs-show-transient-state-title t
    ;; If non nil show the color guide hint for transient state keys. (default t)
@@ -354,6 +355,7 @@ you should place your code here."
  '(package-selected-packages
    (quote
     (treepy graphql xelb exwm org-mime ghub let-alist ranger git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter flycheck-rust seq flycheck-pos-tip pos-tip flycheck-haskell diff-hl org-category-capture noflet ensime sbt-mode scala-mode disaster company-c-headers cmake-mode clang-format mmm-mode markdown-toc markdown-mode gh-md racket-mode faceup csv-mode geiser color-theme-modern green-phosphor-theme slime-company slime common-lisp-snippets lfe-mode flyspell-correct-helm flyspell-correct auto-dictionary winum unfill fuzzy web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data org-projectile org-present org-pomodoro org-download htmlize gnuplot idris-mode prop-menu web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc company-tern dash-functional tern coffee-mode flycheck hlint-refactor helm-hoogle company-ghci company-ghc ghc haskell-mode mu4e-maildirs-extension mu4e-alert ht alert log4e gntp hide-comnt toml-mode racer cargo rust-mode company-auctex auctex-latexmk auctex yapfify uuidgen toc-org powerline py-isort spinner org org-plus-contrib org-bullets mwim live-py-mode link-hint hydra parent-mode projectile pkg-info epl request gitignore-mode git-link flx eyebrowse evil-visual-mark-mode evil-unimpaired magit magit-popup git-commit with-editor smartparens iedit evil-ediff anzu evil goto-chg undo-tree highlight eshell-z dumb-jump diminish company column-enforce-mode bind-map bind-key yasnippet packed dash s helm avy helm-core async auto-complete popup package-build pyvenv pytest pyenv-mode py-yapf pip-requirements hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic f xterm-color ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe use-package spacemacs-theme spaceline smooth-scrolling smeargle shm shell-pop restart-emacs rainbow-delimiters quelpa popwin persp-mode pcre2el paradox page-break-lines orgit open-junk-file neotree multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative leuven-theme intero info+ indent-guide ido-vertical-mode hungry-delete hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu eshell-prompt-extras esh-help elisp-slime-nav define-word company-statistics company-quickhelp company-cabal color-theme-sanityinc-tomorrow cmm-mode clean-aindent-mode buffer-move bracketed-paste auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+ '(safe-local-variable-values (quote ((intero-targets "Confy:exe:confy"))))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

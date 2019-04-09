@@ -7,5 +7,5 @@ function tag {
 
 if [ "$(pidof cmus)" ]; then
     input=$(cmus-remote -Q)
-    printf "%s - %s (%s) %s" "$(tag artist)" "$(tag title)" "$(tag album)" $(tag year)
+    printf "%s - %s (%s / %s)" "$(tag artist)" "$(tag title)" "$(tag album)" $(tag date)
 fi
