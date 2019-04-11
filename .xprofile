@@ -16,7 +16,7 @@ xrandr --output $(get_snd_mon.sh) --auto --primary --pos 0x0 --output eDP1 --mod
 compton --backend glx --blur-background --blur-kern 7x7box --fading --fade-in-step 0.1 --fade-out-step 0.1 -b
 unclutter -b
 
-scheme north
+scheme butterfly
 
 # sunwait poll 49.2123269N 16.604716E
 # if [ $? -eq 2 ]; then
