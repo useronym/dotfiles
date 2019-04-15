@@ -18,12 +18,13 @@ unclutter -b
 
 scheme butterfly
 
-# sunwait poll 49.2123269N 16.604716E
-# if [ $? -eq 2 ]; then
-#   scheme white
-# else
-#   scheme black
-# fi
+# Brno
+sunwait poll 49.2123269N 16.604716E
+if [ $? -eq 2 ]; then
+  scheme butterfly
+else
+  scheme nightsky
+fi
 
 sxhdk &
 
