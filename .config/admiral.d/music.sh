@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
-function tag {
-    line=$(echo "$input" | grep "tag $1" | head -n 1)
-    echo $(echo $line | cut -d ' ' -f 3-)
-}
+APP=spotify
 
-if [ "$(pidof cmus)" ]; then
-    input=$(cmus-remote -Q)
-    printf "%s - %s (%s / %s)" "$(tag artist)" "$(tag title)" "$(tag album)" $(tag date)
+if [ "$(pidof $APP)" ]; then
+    artist=$(playerctl metadata artist)
+    title=$(playerctl metadata title)
+    album=$(playerctl metadata album)
+    printf "%s - %s (%s) " "$artist" "$title" "$album"
 fi

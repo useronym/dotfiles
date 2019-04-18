@@ -35,6 +35,9 @@ bindsym $mod+c exec clipmenu
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%- unmute
 bindsym XF86AudioMute exec amixer sset Master toggle
+bindsym $mod+p exec playerctl play-pause
+bindsym $mod+Right exec playerctl next
+bindsym $mod+Left exec playerctl previous
 bindsym $mod+F11 exec xbacklight -dec 4
 bindsym $mod+F12 exec xbacklight -inc 4
 
