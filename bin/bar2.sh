@@ -9,5 +9,5 @@ if [[ "$PANEL_MON" == "" ]]; then
     exit 0
 fi
 
-admiral -c ~/.config/admiral.d/secondary.toml | lemonbar -b -f'Misc Ohsnap':size=13 -F$c_fg -B$c_bg -U$c_fg -gx25 $PANEL_MON | zsh
+admiral -c ~/.config/admiral.d/secondary.toml | lemonbar -b -f'Misc Ohsnap':size=14 -f'Siji':size=13  -F$c_fg -B$c_bg -U$c_fg -gx25 $PANEL_MON | zsh
 
