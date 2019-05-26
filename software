@@ -1,10 +1,11 @@
 zsh
-i3
+i3-gaps
+i3-lock
+i3ipc-python
 sunwait
 rofi
 feh
 lemonbar
-python-i3-fix-git
 admiral
 nmtui
 alsautils
