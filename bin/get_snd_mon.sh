@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mons=(HDMI2 DP1)
+mons=(HDMI-2 DP-1)
 
 for m in ${mons[@]}; do
     res=$(xrandr -q | grep -o "^$m connected")
