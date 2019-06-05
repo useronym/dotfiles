@@ -2,7 +2,7 @@
 items = ["over", "left", "workspaces", "pad", "right", "music", "coover"]
 
 [workspaces]
-path = "./i3_workspaces.py HDMI2,DP1"
+path = "./i3_workspaces.py default"
 
 [music]
 path = "./music.sh"
@@ -22,11 +22,11 @@ path = "echo '%{r}'"
 static = true
 
 [over]
-path = "echo '%{+o}'"
+path = "echo '%{+u}'"
 static = true
 
 [coover]
-path = "echo '%{-o}'"
+path = "echo '%{-u}'"
 static = true
 
 [pad]
