@@ -1,9 +1,9 @@
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
-export GTK_IM_MODULE='uim'
-export QT_IM_MODULE='uim'
-uim-xim &
-export XMODIFIERS='@im=uim'
+#export GTK_IM_MODULE='uim'
+#export QT_IM_MODULE='uim'
+#uim-xim &
+#export XMODIFIERS='@im=uim'
 
 xset r rate 200 33
 xsetroot -cursor_name left_ptr&
