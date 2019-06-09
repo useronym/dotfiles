@@ -1,5 +1,5 @@
 include "%L"
-
+čα
 # Supersripts and subscripts
 <Multi_key> <asciicircum> <0> : "⁰"
 <Multi_key> <asciicircum> <1> : "¹"
@@ -176,7 +176,7 @@ include "%L"
 <Multi_key> <asciicircum> <bracketright> : "⌉" # latex ?
 <Multi_key> <colon> <colon> : "∷" # latex ?
 <Multi_key> <l> <o> <z> <e> <n> <g> <e> : "◊" # latex \lozenge
-<Multi_key> <d> <e> <g> <r> <e> <e> : "°"
+<Multi_key> <d> <e> <g> : "°"
 <Multi_key> <comma> : "⹁" # latex ?
 <Multi_key> <semicolon> : "⁏" # latex ?
 <Multi_key> <b> <o> <x> : "□" # latex ?

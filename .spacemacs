@@ -411,7 +411,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (load-theme 'sanityinc-solarized-dark :no-confirm)
   (spacemacs/toggle-transparency)
   (spacemacs/set-leader-keys "SPC" 'forward-char "s-SPC" 'forward-char)
   (setq-default dotspacemacs-configuration-layers

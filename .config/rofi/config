@@ -3,3 +3,4 @@ rofi.padding: 300
 rofi.modi: window,run,combi
 rofi.color-normal: #00000000,#ffffff,#00000000,#ffffff,#ff000000
 rofi.color-window: #cc000000,#cc000000
+rofi.font: PragmataPro Mono
