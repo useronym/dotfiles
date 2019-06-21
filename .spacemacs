@@ -50,7 +50,6 @@ This function should only modify configuration layer settings."
      markdown
      version-control
      ranger
-     spell-checking
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -412,7 +411,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (spacemacs/toggle-transparency)
-  (spacemacs/set-leader-keys "SPC" 'forward-char "s-SPC" 'forward-char)
+  (ranger-override-dired-mode t)
   (setq-default dotspacemacs-configuration-layers
               '((ranger :variables
                         ranger-show-preview t)

@@ -2,7 +2,7 @@
 items = ["over", "left", "workspaces", "pad", "right", "music", "coover"]
 
 [workspaces]
-path = "./i3_workspaces.py HDMI-2,DP-1"
+path = "./i3_workspaces.py HDMI2,DP1"
 
 [music]
 path = "./music.sh"

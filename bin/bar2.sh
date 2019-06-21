@@ -4,7 +4,7 @@ sleep 1 # so that bar.sh doesn't kill us
 
 source "colors.sh"
 
-PANEL_MON=$(get_snd_mon.sh)
+PANEL_MON=$(get_mon.sh 2)
 if [[ "$PANEL_MON" == "" ]]; then
     exit 0
 fi
