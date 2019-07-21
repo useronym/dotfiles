@@ -5,7 +5,6 @@ BAT_BIAS=4 # My battery often decides to stop charging at what is reported as 97
 source "colors.sh"
 
 BAT=$(cat /sys/class/power_supply/BAT0/capacity)
-BAT=$(((BAT + BAT_BIAS) >= 100 ? 100 : BAT))
 
 STATUS=$(cat /sys/class/power_supply/BAT0/status)
 if [ "$STATUS" = "Charging" ]; then
@@ -13,6 +12,7 @@ if [ "$STATUS" = "Charging" ]; then
 elif [ "$BAT" -le "9" ]; then
     echo -ne "%{F$c_red}"
 else
+    BAT=$(((BAT + BAT_BIAS) >= 100 ? 100 : BAT))
     echo -ne "%{F$c_fg}"
 fi
 echo -ne '%{R} '

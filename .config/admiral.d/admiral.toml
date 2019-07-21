@@ -3,7 +3,7 @@ items = ["under", "left", "workspaces", "pad",
          "right", "mail", "weather", "network", "sound", "battery", "clock", "counder"]
 
 [workspaces]
-path = "./i3_workspaces.py eDP1"
+path = "./i3_workspaces.py eDP1,HDMI2"
 
 [clock]
 path = "./clock.sh"

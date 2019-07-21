@@ -26,7 +26,10 @@ def format(output_names, workspaces):
     out = '' 
     for workspace in workspaces:
         if workspace['output'] in output_names:
-            name = workspace['name'].split(':')[1]
+            name = workspace['name']
+            split = name.split(':')
+            if len(split) > 1:
+                name = split[1]
             if workspace['focused']:
                 out += '%{R}' + name + '%{R}'
             else:
@@ -49,15 +52,17 @@ if __name__ == '__main__':
     # get our output
     outputs = i3.get_outputs()
     selected_outputs = []
-    for output in outputs:
-        if output['name'] in in_outputs:
-            selected_outputs += [output]
+    for o in in_outputs:
+        if len(selected_outputs) > 0:
+            break
+        for output in outputs:
+            if output['name'] == o:
+                selected_outputs += [output]
     if selected_outputs == []:
         print('Couldn\'t find any of the desired outputs.')
         sys.exit(1)
     output_names = list(map(lambda x: x['name'], selected_outputs))
     # Initial output to console
-    #workspaces = self.socket.get('get_workspaces')
     on_change(output_names, i3, 0)
     # Subscribe to an event
     i3.on('workspace::focus', partial(on_change, output_names))

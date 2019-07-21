@@ -22,6 +22,7 @@ smart_borders on
 
 for_window [class="(?i)spotify"] floating enable; resize set 1500 800; move position center;
 for_window [class="(?i)Tor Browser"] floating enable; resize set 1500 800; move position center;
+for_window [class="(?i)pavucontrol"] floating enable; resize set 600 700; move position center;
 
 bindsym $mod+q kill
 

@@ -1,5 +1,5 @@
 include "%L"
-čα
+
 # Supersripts and subscripts
 <Multi_key> <asciicircum> <0> : "⁰"
 <Multi_key> <asciicircum> <1> : "¹"

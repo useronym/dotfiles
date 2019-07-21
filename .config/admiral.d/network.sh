@@ -2,6 +2,7 @@
 
 WIFI="wlp2s0"
 ETH="enp0s20u1"
+ETH2="enp0s20u2"
 
 source "colors.sh"
 
