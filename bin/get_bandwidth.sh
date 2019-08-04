@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-INTERFACE="wlp2s0"
+INTERFACE=$1
 FILE="/tmp/$INTERFACE-bandwidth"
 
 # Get current values
