@@ -25,12 +25,12 @@ def format(output_names, workspaces):
     # Formats the text according to the workspace data given.
     out = '' 
     for workspace in workspaces:
-        if workspace['output'] in output_names:
-            name = workspace['name']
+        if workspace.output in output_names:
+            name = workspace.name
             split = name.split(':')
             if len(split) > 1:
                 name = split[1]
-            if workspace['focused']:
+            if workspace.focused:
                 out += '%{R}' + name + '%{R}'
             else:
                 out += name
@@ -56,12 +56,12 @@ if __name__ == '__main__':
         if len(selected_outputs) > 0:
             break
         for output in outputs:
-            if output['name'] == o:
+            if output.name == o:
                 selected_outputs += [output]
     if selected_outputs == []:
         print('Couldn\'t find any of the desired outputs.')
         sys.exit(1)
-    output_names = list(map(lambda x: x['name'], selected_outputs))
+    output_names = list(map(lambda x: x.name, selected_outputs))
     # Initial output to console
     on_change(output_names, i3, 0)
     # Subscribe to an event
